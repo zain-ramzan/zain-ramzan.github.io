@@ -621,7 +621,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(242,243,243, 0.9);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -656,8 +656,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  border-top: 3px solid #4d4d4d;
+  border-left: 3px solid #4d4d4d;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -670,8 +670,8 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
+  border-bottom: 3px solid #4d4d4d;
+  border-right: 3px solid #4d4d4d;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -680,6 +680,7 @@ section {
   font-size: 20px;
   color: #45505b;
   font-weight: 600;
+  padding: 0 20px
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -1212,4 +1213,12 @@ section {
   color: white; /* Change background color to white */
   background-color: #0563bb; /* Change text color to the default Bootstrap primary color */
   border-color: #0563bb; /* Change border color to the default Bootstrap primary color */
+}
+
+.keywords{
+  background-color: #45505b;
+  color: white !important;
+  font-size: 10px !important;
+  padding: 0 5px !important;
+  border-radius: 7px !important;
 }
