@@ -1222,3 +1222,7 @@ section {
   padding: 0 5px !important;
   border-radius: 7px !important;
 }
+
+.recommend:hover{
+  color: white;
+}
