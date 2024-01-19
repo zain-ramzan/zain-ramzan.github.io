@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zain Ramzan</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dfdfdf;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Create a container for the bio and picture */
+        .container {
+            max-width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the columns */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Add some responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        /* Container for project boxes */
+        .project-container {
+            max-width: 100%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        /* Style for individual project boxes */
+        .project-box {
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+            /* background-color: #fff; */
+            border-radius: 8px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            border: 1px solid grey;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 768px) {
+            .project-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create the container with two columns -->
+    <div class="container">
+        <!-- Bio column -->
+        <div class="column">
+            <h2>Zain Ramzan</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan auctor nisi, at vestibulum urna
+                tristique et. Integer et venenatis velit. Duis ac lacus vel eros hendrerit convallis.</p>
+        </div>
+
+        <!-- Picture column -->
+        <div class="column">
+            <img src="images.jfif" alt="Your Name">
+        </div>
+    </div>
+    <!-- Centered title box -->
+    <div class="container">
+        <div class="title-box">
+            <h1>My Portfolio</h1>
+        </div>
+
+        <!-- Container for project boxes -->
+
+        <div class="project-container">
+
+            <!-- Project Box 1 -->
+            <div class="project-box">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+                <p><a href="project1-github.jfif" target="_blank">GitHub</a> | <a href="project1-website.html" target="_blank">Website</a></p>
+            </div>
+
+            <!-- Project Box 2 -->
+            <div class="project-box">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+                <p><a href="project1-github.html" target="_blank">GitHub</a> | <a href="project1-website.html" target="_blank">Website</a></p>
+            </div>
+            <!-- Project Box 3 -->
+            <div class="project-box">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+                <p><a href="project1-github.html" target="_blank">GitHub</a> | <a href="project1-website.html" target="_blank">Website</a></p>
+            </div>
+
+            <!-- Project Box 4 -->
+            <div class="project-box">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 4</h3>
+                <p>Description of Project 4.</p>
+                <p><a href="project1-github.html" target="_blank">GitHub</a> | <a href="project1-website.html" target="_blank">Website</a></p>
+            </div>
+
+            <!-- Add more project boxes as needed -->
+
+        </div>
+    </div>
+</body>
+
+</html>
