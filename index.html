@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zain Ramzan</title>
-    <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/D4D03AQG26i5YLXR0VA/profile-displayphoto-shrink_200_200/0/1703682314304?e=1710979200&v=beta&t=T7voJYFB23DwKY9zqNG38x2Nr-MJh_sz7z_n0wqIqWY">
+    <link rel="icon" type="image/x-icon"
+        href="https://media.licdn.com/dms/image/D4D03AQG26i5YLXR0VA/profile-displayphoto-shrink_200_200/0/1703682314304?e=1710979200&v=beta&t=T7voJYFB23DwKY9zqNG38x2Nr-MJh_sz7z_n0wqIqWY">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         /* Add some basic styling */
@@ -13,18 +14,38 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #caccce;
+            background-color: #f2f2f2;
         }
-        .grey-color{
+
+        p {
+            text-align: justify;
+            margin: 5px;
+        }
+
+        h3 {
+            margin: 5px;
+        }
+
+        .grey-color {
             color: #00000099;
         }
-        .blue-color{
+
+        .blue-color {
             color: #0077b5;
         }
 
         h1 {
             text-align: center;
             color: #0077b5;
+        }
+
+        .tag {
+            background-color: #0077b5;
+            color: white;
+            display: inline-block;
+            padding: 3px;
+            border-radius: 4px;
+            font-size: 12px;
         }
 
         /* Create a container for the bio and picture */
@@ -34,7 +55,8 @@
             overflow: hidden;
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            border: 1px solid rgb(201, 201, 201);
         }
 
         /* Style the columns */
@@ -71,7 +93,11 @@
             /* background-color: #fff; */
             border-radius: 8px;
             /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-            border: 1px solid grey;
+            border: 1px solid rgb(163, 163, 163);
+        }
+        .size{
+            width: 100%;
+            
         }
 
         /* Responsive styling for smaller screens */
@@ -89,18 +115,23 @@
         <!-- Bio column -->
         <div class="column">
             <h1>Zain Ramzan</h1>
-            <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan auctor nisi, at vestibulum urna
-                tristique et. Integer et venenatis velit. Duis ac lacus vel eros hendrerit convallis.
+            <p class="grey-color"> I'm Currently Serving as a Teaching Assistant at UET Lahore (Narowal Campus). I've
+                expertise in
+                Machine learning, Deep learing and Computer Vision
             </p>
-            <a href="https://www.github.com/zain-ramzan"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a> &nbsp;
-            <a href="https://www.linkedin.com/in/zainramzan"><i class="fa fa-linkedin blue-color" style="font-size:24px;"></i></a> &nbsp;
-            <a href="mailto:zainramzan7133@gmail.com"><i class="fa fa-envelope blue-color" style="font-size:24px;"></i></a> &nbsp;
-                
+            <a href="https://www.github.com/zain-ramzan"><i class="fa fa-github blue-color"
+                    style="font-size:24px;"></i></a> &nbsp;
+            <a href="https://www.linkedin.com/in/zainramzan"><i class="fa fa-linkedin blue-color"
+                    style="font-size:24px;"></i></a> &nbsp;
+            <a href="mailto:zainramzan7133@gmail.com"><i class="fa fa-envelope blue-color"
+                    style="font-size:24px;"></i></a> &nbsp;
+
         </div>
 
         <!-- Picture column -->
         <div class="column">
-            <img src="https://media.licdn.com/dms/image/D4D03AQG26i5YLXR0VA/profile-displayphoto-shrink_200_200/0/1703682314304?e=1710979200&v=beta&t=T7voJYFB23DwKY9zqNG38x2Nr-MJh_sz7z_n0wqIqWY" alt="Zain Ramzan">
+            <img src="https://media.licdn.com/dms/image/D4D03AQG26i5YLXR0VA/profile-displayphoto-shrink_200_200/0/1703682314304?e=1710979200&v=beta&t=T7voJYFB23DwKY9zqNG38x2Nr-MJh_sz7z_n0wqIqWY"
+                alt="Zain Ramzan">
         </div>
     </div>
     <!-- Centered title box -->
@@ -115,34 +146,103 @@
 
             <!-- Project Box 1 -->
             <div class="project-box">
-                <img src="/Images/Project1.png" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-                <p><a href="project1-github.jfif" target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a> | <a href="project1-website.html" target="_blank"><i class="fa fa-globe blue-color" style="font-size:24px;"></i></a></p>
+                <img width="100%" src="/Images/Project1.png" alt="Project 1">
+                <h3>Real-Time Helmet Violation Detection</h3>
+                <p class="tag">Computer Vision</p>
+                <p><a href="https://github.com/zain-ramzan/Real-Time-Helmet-Violation-Detection" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    <!-- | <a href="project1-website.html" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a> -->
+                </p>
             </div>
+
 
             <!-- Project Box 2 -->
             <div class="project-box">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-                <p><a href="project1-github.html" target="_blank">GitHub</a> | <a href="project1-website.html" target="_blank">Website</a></p>
+                <img class="size" src="/Images/Project2.png" alt="Project 1">
+                <h3>Brain Tumor Detection Using CNN</h3>
+                <p class="tag">Deep learning</p>
+                <p><a href="https://github.com/zain-ramzan/Brain-Tumor-Detection" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a>
+                </p>
             </div>
+
             <!-- Project Box 3 -->
             <div class="project-box">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 3</h3>
-                <p>Description of Project 3.</p>
-                <p><a href="project1-github.html" target="_blank">GitHub</a> | <a href="project1-website.html" target="_blank">Website</a></p>
+                <img class="size" src="/Images/Project3.png" alt="Project 1">
+                <h3>Machine Learning for Flood Detection</h3>
+                <p class="tag">Machine learning</p>
+                <p><a href="https://github.com/zain-ramzan/Machine-Learning-for-Flood-Detection" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a> -->
+                </p>
             </div>
 
             <!-- Project Box 4 -->
             <div class="project-box">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 4</h3>
-                <p>Description of Project 4.</p>
-                <p><a href="project1-github.html" target="_blank">GitHub</a> | <a href="project1-website.html" target="_blank">Website</a></p>
+                <img class="size" src="/Images/Project4.png" alt="Project 1">
+                <h3>Wheat Head Detection</h3>
+                <p class="tag">Computer Vision</p>
+                <p><a href="https://github.com/zain-ramzan/Wheat-Head-Detection-using-Computer-Vision" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a> -->
+                </p>
             </div>
+
+            <!-- Project Box 5 -->
+            <div class="project-box">
+                <img class="size" src="/Images/Project5.gif">
+                <h3>Handwritten Digit Recognition</h3>
+                <p class="tag">Neural Network</p>
+                <p><a href="https://github.com/zain-ramzan/Handwritten-Digit-Recognition-using-Neural-Network" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a> -->
+                </p>
+            </div>
+
+            <!-- Project Box 6 -->
+            <div class="project-box">
+                <img class="size" src="/Images/Project6.gif">
+
+                <h3>PinPoint Eye View Object Detection</h3>
+                <p class="tag">Computer Vision</p>
+                <p><a href="https://github.com/zain-ramzan/PinPoint-Eye-View-Object-Detection-Using-Ultralytics-YOLOv8" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a> -->
+                </p>
+            </div>
+
+            <!-- Project Box 7 -->
+            <div class="project-box">
+                <img class="size" src="/Images/Project7.gif">
+                <h3>Workout Monitoring</h3>
+                <p class="tag">Computer Vision</p>
+                <p><a href="https://github.com/zain-ramzan/Workouts-Monitoring-using-Ultralytics-YOLOv8" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a> -->
+                </p>
+            </div>
+
+
+            <!-- Project Box 7 -->
+            <div class="project-box">
+                <img class="size" src="/Images/Project8.gif">
+                <h3>Human Face Detection in Shopping Mall</h3>
+                <p class="tag">Computer Vision</p>
+                <p><a href="https://github.com/zain-ramzan/Human-Privacy-Blur-and-Human-Eye-View-Objects-Mapping" target="_blank"><i
+                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                            style="font-size:24px;"></i></a> -->
+                </p>
+            </div>
+
 
             <!-- Add more project boxes as needed -->
 
