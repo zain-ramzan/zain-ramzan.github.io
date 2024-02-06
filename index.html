@@ -127,15 +127,18 @@
         }
 
         .button {
-            border: none;
             color: #00000099;
-            margin: auto;
-            padding: 15px 32px;
             text-align: center;
             display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
             cursor: pointer;
+            border-radius: 6px;
+            border: 1px solid rgb(163, 163, 163);
+            background-color: white;
+        }
+        .button:hover{
+            background-color: var(--blue);
+            color: white;
+            border: var(--blue);
         }
 
         .size {
@@ -193,7 +196,9 @@
         <div class="column">
             <img src="/Images/profile.jpg" alt="Zain Ramzan" class="img" style="width: 60%;">
         </div>
-        <div>
+        <!-- button column -->
+
+        <div class="column">
             <button class="button links">Gray</button>
             <button class="button links">Gray</button>
             <button class="button links">Gray</button>
