@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zain Ramzan</title>
     <link rel="icon" type="image/x-icon" href="/Images/profile.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
+        .tab {
+            /* overflow: hidden; */
+            /* border: 1px solid #ccc; */
+            /* background-color: #f1f1f1; */
+
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid rgb(201, 201, 201);
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 12px;
+            transition: 0.3s;
+            font-size: 15px;
+            color: var(--light-grey);
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tab button class */
+        .tab button.active {
+            background-color: var(--blue);
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            /* padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none; */
+        }
+
+        /* ADDED START */
         /* Add some basic styling */
         body {
             font-family: "Roboto", sans-serif;
@@ -163,10 +206,12 @@
             width: 100%;
 
         }
-        .inline{
+
+        .inline {
             display: inline;
         }
-        li{
+
+        li {
             margin-bottom: 5px;
         }
 
@@ -187,10 +232,13 @@
                 font-size: 13px
             }
         }
+
+        /* ADDED END */
     </style>
 </head>
 
 <body>
+
     <!-- Bio Section Start -->
     <div class="container">
         <!-- Bio column -->
@@ -225,222 +273,259 @@
     </div>
     <!-- Bio Section End -->
 
+    <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'Experience')">Experience</button>
+        <button class="tablinks" onclick="openCity(event, 'Project')">Project</button>
+        <button class="tablinks" onclick="openCity(event, 'Article')">Article</button>
+    </div>
 
-    <!-- Experience Section Start -->
-    <div class="container">
-        <div class="title-box">
-            <h1>Experience</h1>
-        </div>
-        <div>
-            <ul>
-                <li><p class="tag inline">Dec 2023 - May 2024</p><h4 class="inline">Internship at University of Engineering and Technology, Lahore Narowal Campus</h4></li>
-                <li><p class="tag inline">Aug 2022 - Sep2022</p><h4 class="inline"> Internship at Special Communication Organization, Mirpur</h4></li>
-                <li><p class="tag inline">Mar 2021 - Nov 2021</p><h4 class="inline">Course Instructor at The Techrotics Lab</h4></li>
-            </ul>
-        </div>
+    <div id="Experience" class="tabcontent" style="display:block;">
+        <!-- Experience Section Start -->
+        <div class="container">
+            <div class="title-box">
+                <h1>Experience</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <p class="tag inline">Dec 2023 - May 2024</p>
+                        <h4 class="inline">Internship at University of Engineering and Technology, Lahore Narowal Campus
+                        </h4>
+                    </li>
+                    <li>
+                        <p class="tag inline">Aug 2022 - Sep2022</p>
+                        <h4 class="inline"> Internship at Special Communication Organization, Mirpur</h4>
+                    </li>
+                    <li>
+                        <p class="tag inline">Mar 2021 - Nov 2021</p>
+                        <h4 class="inline">Course Instructor at The Techrotics Lab</h4>
+                    </li>
+                </ul>
+            </div>
 
         </div>
 
     </div>
     <!-- Experience Section End -->
-
-
-    <!-- Project Section Start -->
-    <div class="container">
-        <div class="title-box">
-            <h1>Projects</h1>
-        </div>
-
-        <!-- Container for project boxes -->
-
-        <div class="sec-container grey-color">
-
-            <!-- Project Box 1 -->
-            <!-- <a href="https://github.com/zain-ramzan/Real-Time-Helmet-Violation-Detection"> -->
-            <div class="box">
-                <img width="100%"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project01.gif?raw=true">
-                <h4>Real-Time Helmet Violation Detection</h4>
-                <p class="tag">Computer Vision</p>
-                <p><a class="links" href="https://github.com/zain-ramzan/Real-Time-Helmet-Violation-Detection"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                </p>
-            </div>
-
-            <!-- Project Box 1 -->
-            <div class="box">
-                <img width="100%"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project1.png?raw=true">
-                <h4>Towards Reducing Handoff Times In Next Generation Wireless Networks</h4>
-                <p class="tag">Wireless Networks</p>
-                <p><a class="links"
-                        href="https://github.com/zain-ramzan/Towards-Reducing-Handoff-Time-in-Next-Generation-Wireless-Networks"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                </p>
-
-                <!-- | <a href="project1-website.html" target="_blank"><i class="fa fa-globe blue-color"
-                            style="font-size:24px;"></i></a> -->
-
-            </div>
-
-
-            <!-- Project Box 2 -->
-
-            <div class="box">
-                <img class="size"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project2.png?raw=true">
-                <h4>Brain Tumor Detection Using CNN</h4>
-                <p class="tag">Deep learning</p>
-                <p><a class="links" href="https://github.com/zain-ramzan/Brain-Tumor-Detection" target="_blank"><i
-                            class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                    <a class="links" href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i
-                            class="fa fa-globe blue-color" style="font-size:24px;"></i></a>
-                </p>
-            </div>
-
-            <!-- Project Box 3 -->
-            <div class="box">
-                <img class="size"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project3.png?raw=true">
-                <h4>Machine Learning for Flood Detection</h4>
-                <p class="tag">Machine learning</p>
-                <p><a class="links" href="https://github.com/zain-ramzan/Machine-Learning-for-Flood-Detection"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
-                            style="font-size:24px;"></i></a> -->
-                </p>
-            </div>
-
-            <!-- Project Box 4 -->
-            <div class="box">
-                <img class="size"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project4.png?raw=true"">
-                <h4>Wheat Head Detection</h4>
-                <p class=" tag">Computer Vision</p>
-                <p><a class="links" href="https://github.com/zain-ramzan/Wheat-Head-Detection-using-Computer-Vision"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
-                            style="font-size:24px;"></i></a> -->
-                </p>
-            </div>
-
-            <!-- Project Box 5 -->
-            <div class="box">
-                <img class="size"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project5.gif?raw=true">
-                <h4>Handwritten Digit Recognition</h4>
-                <p class="tag">Neural Network</p>
-                <p><a class="links"
-                        href="https://github.com/zain-ramzan/Handwritten-Digit-Recognition-using-Neural-Network"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
-                            style="font-size:24px;"></i></a> -->
-                </p>
-            </div>
-
-            <!-- Project Box 6 -->
-            <div class="box">
-                <img class="size"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project6.gif?raw=true">
-
-                <h4>PinPoint Eye View Object Detection</h4>
-                <p class="tag">Computer Vision</p>
-                <p><a class="links"
-                        href="https://github.com/zain-ramzan/PinPoint-Eye-View-Object-Detection-Using-Ultralytics-YOLOv8"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
-                            style="font-size:24px;"></i></a> -->
-                </p>
-            </div>
-
-            <!-- Project Box 7 -->
-            <div class="box">
-                <img class="size"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project7.gif?raw=true">
-                <h4>Workout Monitoring</h4>
-                <p class="tag">Computer Vision</p>
-                <p><a class="links" href="https://github.com/zain-ramzan/Workouts-Monitoring-using-Ultralytics-YOLOv8"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
-                            style="font-size:24px;"></i></a> -->
-                </p>
-            </div>
-
-
-            <!-- Project Box 7 -->
-            <div class="box">
-                <img class="size"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project8.gif?raw=true">
-                <h4>Human Face Detection in Shopping Mall</h4>
-                <p class="tag">Computer Vision</p>
-                <p><a class="links"
-                        href="https://github.com/zain-ramzan/Human-Privacy-Blur-and-Human-Eye-View-Objects-Mapping"
-                        target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
-                    <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
-                            style="font-size:24px;"></i></a> -->
-                </p>
-            </div>
-
-
-            <!-- Add more project boxes as needed -->
-
-
-
-        </div>
-
     </div>
-    <!-- Project Section End -->
+
+    <div id="Project" class="tabcontent">
+        <!-- Project Section Start -->
+        <div class="container">
+            <div class="title-box">
+                <h1>Projects</h1>
+            </div>
+
+            <!-- Container for project boxes -->
+
+            <div class="sec-container grey-color">
+
+                <!-- Project Box 1 -->
+                <!-- <a href="https://github.com/zain-ramzan/Real-Time-Helmet-Violation-Detection"> -->
+                <div class="box">
+                    <img width="100%"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project01.gif?raw=true">
+                    <h4>Real-Time Helmet Violation Detection</h4>
+                    <p class="tag">Computer Vision</p>
+                    <p><a class="links" href="https://github.com/zain-ramzan/Real-Time-Helmet-Violation-Detection"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    </p>
+                </div>
+
+                <!-- Project Box 1 -->
+                <div class="box">
+                    <img width="100%"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project1.png?raw=true">
+                    <h4>Towards Reducing Handoff Times In Next Generation Wireless Networks</h4>
+                    <p class="tag">Wireless Networks</p>
+                    <p><a class="links"
+                            href="https://github.com/zain-ramzan/Towards-Reducing-Handoff-Time-in-Next-Generation-Wireless-Networks"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                    </p>
+
+                    <!-- | <a href="project1-website.html" target="_blank"><i class="fa fa-globe blue-color"
+                        style="font-size:24px;"></i></a> -->
+
+                </div>
+
+
+                <!-- Project Box 2 -->
+
+                <div class="box">
+                    <img class="size"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project2.png?raw=true">
+                    <h4>Brain Tumor Detection Using CNN</h4>
+                    <p class="tag">Deep learning</p>
+                    <p><a class="links" href="https://github.com/zain-ramzan/Brain-Tumor-Detection" target="_blank"><i
+                                class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                        <a class="links" href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i
+                                class="fa fa-globe blue-color" style="font-size:24px;"></i></a>
+                    </p>
+                </div>
+
+                <!-- Project Box 3 -->
+                <div class="box">
+                    <img class="size"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project3.png?raw=true">
+                    <h4>Machine Learning for Flood Detection</h4>
+                    <p class="tag">Machine learning</p>
+                    <p><a class="links" href="https://github.com/zain-ramzan/Machine-Learning-for-Flood-Detection"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                        <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                        style="font-size:24px;"></i></a> -->
+                    </p>
+                </div>
+
+                <!-- Project Box 4 -->
+                <div class="box">
+                    <img class="size"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project4.png?raw=true"">
+            <h4>Wheat Head Detection</h4>
+            <p class=" tag">Computer Vision</p>
+                    <p><a class="links" href="https://github.com/zain-ramzan/Wheat-Head-Detection-using-Computer-Vision"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                        <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                        style="font-size:24px;"></i></a> -->
+                    </p>
+                </div>
+
+                <!-- Project Box 5 -->
+                <div class="box">
+                    <img class="size"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project5.gif?raw=true">
+                    <h4>Handwritten Digit Recognition</h4>
+                    <p class="tag">Neural Network</p>
+                    <p><a class="links"
+                            href="https://github.com/zain-ramzan/Handwritten-Digit-Recognition-using-Neural-Network"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                        <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                        style="font-size:24px;"></i></a> -->
+                    </p>
+                </div>
+
+                <!-- Project Box 6 -->
+                <div class="box">
+                    <img class="size"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project6.gif?raw=true">
+
+                    <h4>PinPoint Eye View Object Detection</h4>
+                    <p class="tag">Computer Vision</p>
+                    <p><a class="links"
+                            href="https://github.com/zain-ramzan/PinPoint-Eye-View-Object-Detection-Using-Ultralytics-YOLOv8"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                        <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                        style="font-size:24px;"></i></a> -->
+                    </p>
+                </div>
+
+                <!-- Project Box 7 -->
+                <div class="box">
+                    <img class="size"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project7.gif?raw=true">
+                    <h4>Workout Monitoring</h4>
+                    <p class="tag">Computer Vision</p>
+                    <p><a class="links"
+                            href="https://github.com/zain-ramzan/Workouts-Monitoring-using-Ultralytics-YOLOv8"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                        <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                        style="font-size:24px;"></i></a> -->
+                    </p>
+                </div>
+
+
+                <!-- Project Box 7 -->
+                <div class="box">
+                    <img class="size"
+                        src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project8.gif?raw=true">
+                    <h4>Human Face Detection in Shopping Mall</h4>
+                    <p class="tag">Computer Vision</p>
+                    <p><a class="links"
+                            href="https://github.com/zain-ramzan/Human-Privacy-Blur-and-Human-Eye-View-Objects-Mapping"
+                            target="_blank"><i class="fa fa-github blue-color" style="font-size:24px;"></i></a>
+                        <!-- | <a href="https://brain-tumors-detection.streamlit.app/" target="_blank"><i class="fa fa-globe blue-color"
+                        style="font-size:24px;"></i></a> -->
+                    </p>
+                </div>
+
+
+                <!-- Add more project boxes as needed -->
 
 
 
+            </div>
 
-    <!-- Article Section Start -->
-    <div class="container">
-        <div class="title-box">
-            <h1>Articles</h1>
         </div>
+        <!-- Project Section End -->
+    </div>
 
-        <!-- Container for Article boxes -->
-
-        <div class="sec-container grey-color">
-
-            <!-- Article Box 1 -->
-            <div class="box">
-                <h4>Learning Python through Smart Projects: A Flowchart for Quick Mastery</h4>
-                <p class="tag">Python</p>
-                <p>Are you eager to dive into Python programming without wading through hours of beginner tutorials? Do
-                    you prefer a hands-on approach to learning? If so, this article is for you. <br> <br> <a
-                        class="link"
-                        href="https://www.linkedin.com/pulse/learning-python-through-smart-projects-flowchart-quick-zain-ramzan/?trackingId=q0c0If6JRBOZ0K1imxKjIA%3D%3D">Read
-                        more...</a>
-                </p>
+    <div id="Article" class="tabcontent">
+        <!-- Article Section Start -->
+        <div class="container">
+            <div class="title-box">
+                <h1>Articles</h1>
             </div>
 
-            <!-- Article Box 2 -->
-            <div class="box">
-                <h4>How Learning Python Can Supercharge Your Career</h4>
-                <p class="tag">Python</p>
-                <p>In the fast-paced world of today's job market, professionals across various industries are constantly
-                    seeking ways to enhance their skills, stay competitive, and unlock new career opportunities. <br>
-                    <br> <a class="link"
-                        href="https://www.linkedin.com/pulse/how-learning-python-can-supercharge-your-career-zain-ramzan/?trackingId=eGyIGlBtQdWfMccLtV41Pw%3D%3D">Read
-                        more...</a>
-                </p>
+            <!-- Container for Article boxes -->
+
+            <div class="sec-container grey-color">
+
+                <!-- Article Box 1 -->
+                <div class="box">
+                    <h4>Learning Python through Smart Projects: A Flowchart for Quick Mastery</h4>
+                    <p class="tag">Python</p>
+                    <p>Are you eager to dive into Python programming without wading through hours of beginner tutorials?
+                        Do
+                        you prefer a hands-on approach to learning? If so, this article is for you. <br> <br> <a
+                            class="link"
+                            href="https://www.linkedin.com/pulse/learning-python-through-smart-projects-flowchart-quick-zain-ramzan/?trackingId=q0c0If6JRBOZ0K1imxKjIA%3D%3D">Read
+                            more...</a>
+                    </p>
+                </div>
+
+                <!-- Article Box 2 -->
+                <div class="box">
+                    <h4>How Learning Python Can Supercharge Your Career</h4>
+                    <p class="tag">Python</p>
+                    <p>In the fast-paced world of today's job market, professionals across various industries are
+                        constantly
+                        seeking ways to enhance their skills, stay competitive, and unlock new career opportunities.
+                        <br>
+                        <br> <a class="link"
+                            href="https://www.linkedin.com/pulse/how-learning-python-can-supercharge-your-career-zain-ramzan/?trackingId=eGyIGlBtQdWfMccLtV41Pw%3D%3D">Read
+                            more...</a>
+                    </p>
+                </div>
+
+                <!-- Article Box 3 -->
+                <div class="box">
+                    <h4>Unlock Your Productivity Potential: Strategies to Maximize Efficiency</h4>
+                    <p class="tag">Growth</p>
+                    <p>In today's fast-paced professional world, productivity is a precious commodity. We all strive to
+                        accomplish more in less time and achieve our goals with efficiency and excellence.<br> <br> <a
+                            class="link"
+                            href="https://www.linkedin.com/pulse/unlock-your-productivity-potential-strategies-maximize-zain-ramzan/?trackingId=xqLZFeZpQJuianWpql519w%3D%3Dhttps://www.linkedin.com/pulse/unlock-your-productivity-potential-strategies-maximize-zain-ramzan/?trackingId=xqLZFeZpQJuianWpql519w%3D%3D">Read
+                            more...</a>
+                    </p>
+                </div>
+
+                <!-- Article Section End -->
             </div>
 
-            <!-- Article Box 3 -->
-            <div class="box">
-                <h4>Unlock Your Productivity Potential: Strategies to Maximize Efficiency</h4>
-                <p class="tag">Growth</p>
-                <p>In today's fast-paced professional world, productivity is a precious commodity. We all strive to
-                    accomplish more in less time and achieve our goals with efficiency and excellence.<br> <br> <a
-                        class="link"
-                        href="https://www.linkedin.com/pulse/unlock-your-productivity-potential-strategies-maximize-zain-ramzan/?trackingId=xqLZFeZpQJuianWpql519w%3D%3Dhttps://www.linkedin.com/pulse/unlock-your-productivity-potential-strategies-maximize-zain-ramzan/?trackingId=xqLZFeZpQJuianWpql519w%3D%3D">Read
-                        more...</a>
-                </p>
-            </div>
-
-            <!-- Article Section End -->
+            <script>
+                function openCity(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
 
 </body>
 
