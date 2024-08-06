@@ -7,6 +7,7 @@
     <title>Zain Ramzan</title>
     <link rel="icon" type="image/x-icon" href="/Images/profile.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -220,7 +221,6 @@
             margin-bottom: 5px;
             color: var(--light-grey);
             font-size: 15px;
-            line-height: 1.4;
         }
 
         .img {
@@ -244,16 +244,24 @@
                 bottom: 0;
                 margin: 0;
                 width: 100%;
-                
                 border-radius: 0;
             }
+
         }
     </style>
 </head>
 
 <body>
+
+    <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'Profile')">About</button>
+        <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
+        <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+        <button class="tablinks" onclick="openCity(event, 'Project')">Project</button>
+        <button class="tablinks" onclick="openCity(event, 'Article')">Article</button>
+    </div>
     <!-- Bio Section Start -->
-    <div class="container">
+    <div id="Profile" class="container tabcontent" style="display:block;">
         <!-- Bio column -->
         <div class="column">
             <h1>Zain Ramzan</h1>
@@ -285,15 +293,10 @@
         <!-- button column -->
     </div>
     <!-- Bio Section End -->
-    <div class="tab">
-        <button class="tablinks active" onclick="openCity(event, 'Experience')">Experience</button>
-        <button class="tablinks" onclick="openCity(event, 'Project')">Project</button>
-        <button class="tablinks" onclick="openCity(event, 'Article')">Article</button>
-    </div>
 
 
     <!-- Experience Section Start -->
-    <div class="container tabcontent" id="Experience" style="display:block;">
+    <div class="container tabcontent" id="Experience" >
         <div class="title-box">
             <h1>Experience</h1>
         </div>
@@ -524,6 +527,7 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+    
 </script>
 
 
