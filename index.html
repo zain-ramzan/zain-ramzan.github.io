@@ -12,8 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-
-.tab {
+        .tab {
             /* overflow: hidden; */
             /* border: 1px solid #ccc; */
             /* background-color: #f1f1f1; */
@@ -117,13 +116,12 @@
         /* Create a container for the bio and picture */
         .container {
             width: 80%;
-            margin: 20px auto;
+            margin: 20px auto 60px auto;
             overflow: hidden;
             background-color: #fff;
             border-radius: 8px;
             border: 1px solid rgb(201, 201, 201);
         }
-
         /* Style the columns */
         .column {
             float: left;
@@ -160,12 +158,18 @@
 
         /* Style for individual project boxes */
         .box {
-            width: 300px;
+            width: 30%;
             margin: 10px;
             padding: 15px;
             box-sizing: border-box;
             border-radius: 8px;
             border: 1px solid rgb(163, 163, 163);
+        }
+
+        p {
+            text-align: left;
+            color: var(--light-grey);
+
         }
 
         .link {
@@ -212,11 +216,15 @@
             width: 100%;
 
         }
-        .inline{
+
+        .inline {
             display: inline;
             padding: 4px;
+            line-height: 2;
+            text-align: left;
         }
-        li{
+
+        li {
             margin-bottom: 5px;
             color: var(--light-grey);
             font-size: 15px;
@@ -233,19 +241,22 @@
             .container {
                 width: 95%;
             }
+            .box{
+                width: 95%;
+            }
 
             .column {
                 width: 100%;
                 font-size: 13px
             }
-            .tab{
+
+            .tab {
                 position: fixed;
                 bottom: 0;
                 margin: 0;
                 width: 100%;
                 border-radius: 0;
             }
-
         }
     </style>
 </head>
@@ -295,38 +306,59 @@
 
 
     <!-- Experience Section Start -->
-    <div class="container tabcontent" id="Experience" >
+    <div class="container tabcontent" id="Experience">
         <div class="title-box">
             <h1>Experience</h1>
         </div>
-        <div style="padding: 5px;">
-            <ul>
-                <li><p class="tag inline">Dec 2023 - May 2024</p>Internship at University of Engineering and Technology, Lahore Narowal Campus</li>
-                <li><p class="tag inline">Aug 2022 - Sep 2022</p> Internship at Special Communication Organization, Mirpur</li>
-                <li><p class="tag inline">Mar 2021 - Nov 2021</p> Course Instructor at The Techrotics Lab</li>
-            </ul>
+        <div class="sec-container">
+            <div class="box">
+                <p class="tag inline">Dec 2023 - May 2024</p>
+                <p>Teaching Assistant</p>
+                <p>Electrical Engineering Department, University of Engineering and Technology, Lahore (Narowal Campus)</p>
+            </div>
+            <div class="box">
+                <p class="tag inline">Aug 2022 - Sep 2022</p>
+                <p>Internship</p>
+                <p>Special Communication Organization, Mirpur</p>
+            </div>
+            <div class="box">
+                <p class="tag inline">Mar 2021 - Nov 2021</p>
+                <p>React Js Course Instructor</p>
+                <p>The Techrotics Lab</p>
+            </div>
         </div>
 
-        </div>
+    </div>
 
     </div>
     <!-- Experience Section End -->
 
 
     <!-- Education Section Start -->
-    <div class="container tabcontent" id="Education" >
+    <div class="container tabcontent" id="Education">
         <div class="title-box">
             <h1>Education</h1>
         </div>
-        <div style="padding: 5px;">
-            <ul>
-                <li><p class="tag inline">Oct 2018 - Sep 2022</p>B.sc Electrical Engineering from Mirpur University of Scinece and Technology (MUST), Miprur Azad kashmir</li>
-                <li><p class="tag inline">Aug 2016 - Sep 2018</p>F.sc (Pre-Engineering) from Punjab Group of Colleges, Zafarwal</li>
-                <li><p class="tag inline">May 2014 - July 2016</p>Matriculation from Ghazali Public School, Zafarwal</li>
-            </ul>
+
+        <div class="sec-container">
+            <div class="box">
+                <p class="tag inline">Oct 2018 - Sep 2022</p>
+                <p>B.sc Electrical Engineering</p>
+                <p>Mirpur University of Scinece and Technology (MUST), Miprur Azad kashmir</p>
+            </div>
+            <div class="box">
+                <p class="tag inline">Oct 2018 - Sep 2022</p>
+                <p>F.sc (Pre-Engineering)</p>
+                <p>Punjab Group of Colleges, Zafarwal</p>
+            </div>
+            <div class="box">
+                <p class="tag inline">May 2014 - July 2016</p>
+                <p>Matriculation</p>
+                <p>Ghazali Public School, Zafarwal</p>
+            </div>
         </div>
 
-        </div>
+    </div>
 
     </div>
     <!-- Education Section End -->
@@ -357,7 +389,7 @@
             <!-- Project Box 1 -->
             <div class="box">
                 <img width="100%"
-                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project1.png?raw=true">
+                    src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/fyp.png?raw=true">
                 <h4>Towards Reducing Handoff Times In Next Generation Wireless Networks</h4>
                 <p class="tag">Wireless Networks</p>
                 <p><a class="links"
@@ -482,7 +514,7 @@
 
 
     <!-- Article Section Start -->
-    <div  class="container tabcontent" id="Article">
+    <div class="container tabcontent" id="Article">
         <div class="title-box">
             <h1>Articles</h1>
         </div>
@@ -545,7 +577,7 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     }
-    
+
 </script>
 
 
