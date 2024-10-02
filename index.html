@@ -67,6 +67,12 @@
             background-color: #f2f2f2;
         }
 
+        a {
+            text-decoration: none;
+            color: #0a66c2;
+        }
+        
+
         :root {
             --blue: #0a66c2;
             --grey: rgb(163, 163, 163);
@@ -168,6 +174,10 @@
             border: 1px solid rgb(163, 163, 163);
         }
 
+        .width {
+            width: 95% !important;
+        }
+
         p {
             text-align: left;
             color: var(--light-grey);
@@ -236,6 +246,78 @@
             border-radius: 8px;
             border: 0.5em solid var(--blue);
             /* border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; */
+        }
+
+        .education-box {
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .arrow-container {
+            margin-left: auto;
+            /* This pushes the arrow to the right */
+        }
+
+        .arrow {
+            cursor: pointer !important;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .education-box:hover .arrow {
+            opacity: 1;
+        }
+
+        .education-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .education-box.active .education-details {
+            max-height: 500px;
+            /* Adjust this value based on your content */
+        }
+
+        .education-box.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .additional-info {
+            display: none;
+        }
+
+        .education-box.active .additional-info {
+            display: block;
+        }
+
+        .logo-container {
+            margin-right: 10px;
+        }
+
+        .logo-box {
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+        .university-info {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .uppa-logo {
+            background-image: url('https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/uppa-logo.png?raw=true');
         }
 
         /* Add some responsive styles for smaller screens */
@@ -313,19 +395,19 @@
         <div class="title-box">
             <h1>Experience</h1>
         </div>
-        <div class="sec-container">
-            <div class="box">
+        <div class="sec-container" style="justify-content: space-around;">
+            <div class="box width">
                 <h4>Teaching Assistant</h4>
                 <p class="tag inline">Dec 2023 - May 2024</p>
                 <p>Electrical Engineering Department, University of Engineering and Technology, Lahore (Narowal Campus)
                 </p>
             </div>
-            <div class="box">
+            <div class="box width">
                 <h4>Internship</h4>
                 <p class="tag inline">Aug 2022 - Sep 2022</p>
                 <p>Special Communication Organization, Mirpur</p>
             </div>
-            <div class="box">
+            <div class="box width">
                 <h4>React Js Course Instructor</h4>
                 <p class="tag inline">Mar 2021 - Nov 2021</p>
                 <p>The Techrotics Lab</p>
@@ -339,32 +421,112 @@
 
 
     <!-- Education Section Start -->
+    <!-- <div class="container tabcontent" id="Education">
+        <div class="title-box">
+            <h1>Education</h1>
+        </div>
+
+         <div class="sec-container">
+            <div class="box">
+                <h4>M2 Computer Sciences: Industry 4.0</h4>
+                <p class="tag inline">Sep 2024 - Sep 2025</p>
+                <p>University of Pau and the Adour Regions, France</p>
+            </div> -->
+
+
     <div class="container tabcontent" id="Education">
         <div class="title-box">
             <h1>Education</h1>
         </div>
 
-        <div class="sec-container">
-            <div class="box">
-                <h4>M2 Computer Sciences: Industry 4.0</h4>
-                <p class="tag inline">Sep 2024 - Sep 2025</p>
-                <p>University of Pau and the Adour Regions, France</p>
+        <div class="sec-container" style="justify-content: space-around;">
+            <!-- UPPA start -->
+            <div class="box width education-box">
+                <div class="education-header">
+                    <h4>M2 Computer Sciences: Industry 4.0</h4>
+                    <div class="arrow-container">
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                </div>
+                <p class="tag inline">September 2024 - September 2025</p>
+                <div class="university-info">
+                    <div class="logo-container">
+                        <div class="logo-box uppa-logo"></div>
+                    </div>
+                    <p>University of Pau and the Adour Regions (UPPA), Tarbes Campus, France</p>
+                </div>
+                <div class="education-details">
+                    <p class="additional-info">
+                    <p>Projects:</p>
+                    <ul>
+                        <li><a href="#" title="Link will available soon...">Smart Home Project</a></li>
+                    </ul>
+                    <p>Key Courses:</p>
+                    <ul>
+                        <li>Industry 4.0 cyber-physical Systems Engineering & Innovation</li>
+                        <li>Business Intelligence and Business Analytics</li>
+
+                        <li>Research Initiation</li>
+                        <li>Advanced Robotics</li>
+                        <li>Advance Virtual Environments</li>
+                        <li>Advanced Additive Manufacturing</li>
+                        <li>Advanced Distribution and Embedded Systems</li>
+                    </ul>
+                    <p>Software Used:</p>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>Altair Inspire</li>
+                    </ul>
+                    <p>Programming Language:</p>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                    </ul>
+                    </p>
+                </div>
             </div>
-            <div class="box">
-                <h4>B.sc Electrical Engineering</h4>
-                <p class="tag inline">Oct 2018 - Sep 2022</p>
-                <p>Mirpur University of Scinece and Technology (MUST), Mirpur Azad kashmir</p>
+            <!-- UPPA End -->
+
+            <!-- MUST start -->
+            <div class="box width education-box">
+                <div class="education-header">
+                    <h4>B.sc Electrical Engineering</h4>
+                    <div class="arrow-container">
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                </div>
+                <p class="tag inline">October 2018 - September 2022</p>
+                <div class="university-info">
+                    <div class="logo-container">
+                        <div class="logo-box uppa-logo"></div>
+                    </div>
+                    <p>Mirpur University of Science and Technology (MUST), Mirpur Pakistan</p>
+                </div>
+                <div class="education-details">
+                    <p class="additional-info">
+                    <p>Final Year Research Project:</p>
+                    <ul>
+                        <li><a href="#" title="Link will available soon...">Towards Reducing Handoff Time in Next Generation Wireless Networks</a></li>
+                    </ul>
+                    <p>Key Courses:</p>
+                    <ul>
+                        <li>Industry 4.0 cyber-physical Systems Engineering & Innovation</li>
+                        <li>Business Intelligence and Business Analytics</li>
+                    </ul>
+                    <p>Software Used:</p>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>Altair Inspire</li>
+                    </ul>
+                    <p>Programming Language:</p>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                    </ul>
+                    </p>
+                </div>
             </div>
-            <div class="box">
-                <h4>F.sc (Pre-Engineering)</h4>
-                <p class="tag inline">Oct 2018 - Sep 2022</p>
-                <p>Punjab Group of Colleges, Zafarwal</p>
-            </div>
-            <div class="box">
-                <h4>Matriculation</h4>
-                <p class="tag inline">May 2014 - July 2016</p>
-                <p>Ghazali Public School, Zafarwal</p>
-            </div>
+            <!-- MUST End -->
         </div>
 
     </div>
@@ -396,7 +558,8 @@
             </div>
 
             <!-- Project Box 1 -->
-            <div class="box" data-link="https://github.com/zain-ramzan/Towards-Reducing-Handoff-Time-in-Next-Generation-Wireless-Networks">
+            <div class="box"
+                data-link="https://github.com/zain-ramzan/Towards-Reducing-Handoff-Time-in-Next-Generation-Wireless-Networks">
                 <img width="100%"
                     src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/fyp.png?raw=true">
                 <h4>Towards Reducing Handoff Times In Next Generation Wireless Networks</h4>
@@ -430,7 +593,8 @@
             </div>
 
             <!-- Project Box 5 -->
-            <div class="box" data-link="https://github.com/zain-ramzan/Handwritten-Digit-Recognition-using-Neural-Network">
+            <div class="box"
+                data-link="https://github.com/zain-ramzan/Handwritten-Digit-Recognition-using-Neural-Network">
                 <img class="size"
                     src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project5.gif?raw=true">
                 <h4>Handwritten Digit Recognition</h4>
@@ -438,7 +602,8 @@
             </div>
 
             <!-- Project Box 6 -->
-            <div class="box" data-link="https://github.com/zain-ramzan/PinPoint-Eye-View-Object-Detection-Using-Ultralytics-YOLOv8">
+            <div class="box"
+                data-link="https://github.com/zain-ramzan/PinPoint-Eye-View-Object-Detection-Using-Ultralytics-YOLOv8">
                 <img class="size"
                     src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project6.gif?raw=true">
 
@@ -456,7 +621,8 @@
 
 
             <!-- Project Box 7 -->
-            <div class="box" data-link="https://github.com/zain-ramzan/Human-Privacy-Blur-and-Human-Eye-View-Objects-Mapping">
+            <div class="box"
+                data-link="https://github.com/zain-ramzan/Human-Privacy-Blur-and-Human-Eye-View-Objects-Mapping">
                 <img class="size"
                     src="https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/Project8.gif?raw=true">
                 <h4>Human Face Detection in Shopping Mall</h4>
@@ -487,7 +653,8 @@
         <div class="sec-container grey-color">
 
             <!-- Article Box 1 -->
-            <div class="box" data-link="https://www.linkedin.com/pulse/learning-python-through-smart-projects-flowchart-quick-zain-ramzan/?trackingId=q0c0If6JRBOZ0K1imxKjIA%3D%3D">
+            <div class="box"
+                data-link="https://www.linkedin.com/pulse/learning-python-through-smart-projects-flowchart-quick-zain-ramzan/?trackingId=q0c0If6JRBOZ0K1imxKjIA%3D%3D">
                 <h4>Learning Python through Smart Projects: A Flowchart for Quick Mastery</h4>
                 <p class="tag">Python</p>
                 <p>Are you eager to dive into Python programming without wading through hours of beginner tutorials? Do
@@ -496,7 +663,8 @@
             </div>
 
             <!-- Article Box 2 -->
-            <div class="box" data-link="https://www.linkedin.com/pulse/how-learning-python-can-supercharge-your-career-zain-ramzan/?trackingId=eGyIGlBtQdWfMccLtV41Pw%3D%3D">
+            <div class="box"
+                data-link="https://www.linkedin.com/pulse/how-learning-python-can-supercharge-your-career-zain-ramzan/?trackingId=eGyIGlBtQdWfMccLtV41Pw%3D%3D">
                 <h4>How Learning Python Can Supercharge Your Career</h4>
                 <p class="tag">Python</p>
                 <p>In the fast-paced world of today's job market, professionals across various industries are constantly
@@ -547,7 +715,38 @@
             development.style.cursor = 'default'; // add this line
         }
     });
+    // ARROW CODE
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const educationBoxes = document.querySelectorAll('.education-box');
+
+        educationBoxes.forEach(box => {
+            const arrow = box.querySelector('.arrow');
+
+            // Add click event to the arrow
+            arrow.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event from bubbling up
+                box.classList.toggle('active');
+            });
+
+            // Prevent toggling when clicking anywhere else in the box
+            box.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        });
+    });
+
+
+    // LOGO CODE
+    document.addEventListener('DOMContentLoaded', function () {
+        const educationBoxes = document.querySelectorAll('.education-box');
+
+        educationBoxes.forEach(box => {
+            box.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+    });
 
 
 
