@@ -350,6 +350,7 @@
                 width: 100%;
                 border-radius: 0;
             }
+
             .education-box {
                 position: static;
             }
@@ -358,6 +359,7 @@
 </head>
 
 <body>
+    <div id="google_translate_element"></div>
 
     <div class="tab">
         <button class="tablinks active" onclick="openCity(event, 'Profile')">About</button>
@@ -379,7 +381,8 @@
                 visionary innovator, I'm driven to shape the future of Industry 4.0.
                 <br><br>
 
-                I'm a results-driven Data Analyst passionate about uncovering actionable insights to drive business growth.
+                I'm a results-driven Data Analyst passionate about uncovering actionable insights to drive business
+                growth.
                 Skilled in data analysis, visualization, and interpretation, with a keen eye for detail.
                 <br><br>
 
@@ -797,10 +800,17 @@
             });
         });
     });
-
-
-
+    // LANGUAGUE CHANGE CODE
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,fr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+    
 </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 </html>
