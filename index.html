@@ -62,7 +62,7 @@
         /* Add some basic styling */
         body {
             font-family: "Roboto", sans-serif;
-            /* margin: 0; */
+            margin-bottom: 10px;
             padding: 0;
             background-color: #f2f2f2;
         }
@@ -359,7 +359,7 @@
 </head>
 
 <body>
-    <div id="google_translate_element"></div>
+    <!-- <div id="google_translate_element"></div> -->
 
     <div class="tab">
         <button class="tablinks active" onclick="openCity(event, 'Profile')">About</button>
@@ -801,16 +801,17 @@
         });
     });
     // LANGUAGUE CHANGE CODE
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'en,fr',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-    }
+//     function googleTranslateElementInit() {
+//         new google.translate.TranslateElement({
+//             pageLanguage: 'en',
+//             includedLanguages: 'en,fr',
+//             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+//         }, 'google_translate_element');
+//     }
     
-</script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+//  </script>
+
+     <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 
 
 </html>
