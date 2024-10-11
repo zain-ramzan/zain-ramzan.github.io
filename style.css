@@ -342,7 +342,7 @@ li {
         border-radius: 0;
     }
     .tab button {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .education-box {
