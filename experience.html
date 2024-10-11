@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Zain RAMZAN</title>
+    <link rel="icon" type="image/x-icon" href="/Images/profile.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .tab {
+            /* overflow: hidden; */
+            /* border: 1px solid #ccc; */
+            /* background-color: #f1f1f1; */
+
+            width: 80%;
+            margin: 20px auto;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid rgb(201, 201, 201);
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 12px;
+            transition: 0.3s;
+            font-size: 15px;
+            color: var(--light-grey);
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tab button class */
+        .tab button.active {
+            background-color: var(--blue);
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            /*display: none;
+             padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none; */
+        }
+
+
+
+        /* Add some basic styling */
+        body {
+            font-family: "Roboto", sans-serif;
+            margin-bottom: 10px;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0a66c2;
+        }
+
+
+        :root {
+            --blue: #0a66c2;
+            --grey: rgb(163, 163, 163);
+            --light-grey: #00000099;
+        }
+
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        p {
+            text-align: justify;
+            margin: 5px;
+            font-size: 15px;
+        }
+
+        h4 {
+            margin: 5px;
+            color: var(--light-grey);
+        }
+
+        .grey-color {
+            color: var(--light-grey);
+        }
+
+        .blue-color {
+            color: var(--blue)
+        }
+
+        h1 {
+            margin: 10px;
+            text-align: center;
+            color: var(--blue);
+        }
+
+        .tag {
+            background-color: var(--blue);
+            color: white;
+            display: inline-block;
+            padding: 3px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        /* Create a container for the bio and picture */
+        .container {
+            width: 80%;
+            margin: 20px auto 60px auto;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid rgb(201, 201, 201);
+        }
+
+        /* Style the columns */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .links {
+            text-decoration: none !important;
+            color: #00000099;
+
+            /* margin: 10px; */
+            padding: 9px 6px 3px 6px;
+            box-sizing: border-box;
+            border-radius: 7px;
+            border: 1px solid rgb(163, 163, 163);
+        }
+
+        .links:hover {
+            border: 1px solid var(--blue);
+        }
+
+
+        /* Container for project boxes */
+        .sec-container {
+            max-width: 95%;
+            margin: 0 auto 10px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Style for individual project boxes */
+        .box {
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            border: 1px solid rgb(163, 163, 163);
+        }
+
+        .width {
+            width: 95% !important;
+        }
+
+        p {
+            text-align: left;
+            color: var(--light-grey);
+
+        }
+
+        .link {
+            text-decoration: none !important;
+            color: #00000099;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            border: 1px solid rgb(163, 163, 163);
+            font-size: 12px;
+        }
+
+        .link:hover {
+            background-color: var(--blue);
+            color: white;
+            border: 1px solid var(--blue);
+        }
+
+        .box:hover {
+            border: 1px solid var(--blue);
+
+
+        }
+
+        .button {
+            color: #00000099;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            /* border-radius: 6px; */
+            border: 1px solid rgb(163, 163, 163);
+            font-size: 12px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: var(--blue);
+            color: white;
+            border: var(--blue);
+        }
+
+        .size {
+            width: 100%;
+
+        }
+
+        .inline {
+            display: inline;
+            padding: 4px;
+            line-height: 2;
+            text-align: left;
+        }
+
+        li {
+            margin-bottom: 5px;
+            color: var(--light-grey);
+            font-size: 15px;
+        }
+
+        .img {
+            border-radius: 8px;
+            border: 0.5em solid var(--blue);
+            /* border-image: linear-gradient(45deg, rgb(0,143,104), rgb(250,224,66)) 1; */
+        }
+
+        .education-box {
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .arrow-container {
+            margin-left: auto;
+            /* This pushes the arrow to the right */
+        }
+
+        .arrow {
+            cursor: pointer !important;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .education-box:hover .arrow {
+            opacity: 1;
+        }
+
+        .education-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .education-box.active .education-details {
+            max-height: 500px;
+            /* Adjust this value based on your content */
+        }
+
+        .education-box.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .additional-info {
+            display: none;
+        }
+
+        .education-box.active .additional-info {
+            display: block;
+        }
+
+        .logo-container {
+            margin-right: 10px;
+        }
+
+        .logo-box {
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+        }
+
+        .university-info {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .uppa-logo {
+            background-image: url('https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/uppa-logo.png?raw=true');
+        }
+
+        .must-logo {
+            background-image: url('https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/must-logo.png?raw=true');
+        }
+
+        .uet-logo {
+            background-image: url('https://github.com/zain-ramzan/zain-ramzan.github.io/blob/main/Images/uet-logo.png?raw=true')
+        }
+
+        /* Add some responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .box {
+                width: 95%;
+            }
+
+            .column {
+                width: 100%;
+                font-size: 13px
+            }
+
+            .tab {
+                position: fixed;
+                bottom: 0;
+                margin: 0;
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .education-box {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks" onclick="document.location.href='index.html'">About</button>
+        <button class="tablinks active" onclick="document.location='experience.html'">Experience</button>
+        <button class="tablinks" onclick="document.location.href='education.html'">Experience</button>
+        <button class="tablinks" onclick="document.location.href='project.html'">Project</button>
+        <button class="tablinks" onclick="document.location.href='article.html'">Article</button>
+    </div>
+    <!-- Experience Section Start -->
+    <div class="container" id="Experience">
+        <div class="title-box">
+            <h1>Experience</h1>
+        </div>
+        <div class="sec-container" style="justify-content: space-around;">
+
+            <!-- UET start -->
+            <div class="box width education-box">
+                <div class="education-header">
+                    <h4>Teaching Assistant</h4>
+                    <div class="arrow-container">
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                </div>
+                <p class="tag inline">December 2023 - May 2024</p>
+                <div class="university-info">
+                    <div class="logo-container">
+                        <div class="logo-box uet-logo"></div>
+                    </div>
+                    <p><a target="_blank" href="https://nwl.uet.edu.pk/department-of-electrical-engineering/">Department
+                            of Electrical Engineering <br>University of Engineering and Technology (UET), Lahore
+                            (Narowal Campus)</a></p>
+                </div>
+                <div class="education-details">
+                    <p class="additional-info">
+                    <p><b>Key Activities:</b></p>
+                    <ul>
+                        <li>Complied lab manuals for experiments conducted in various electrical engineering labs.</li>
+                        <li>Assisted in the collection and organization of course files, including lecture plans,
+                            learning outcomes,
+                            and program outcomes. </li>
+                        <li>Coordinate internal and external presentations for final year project students. </li>
+                        <li>Supported exam administration by assisting with invigilation, exam paper distribution, and
+                            administrative tasks. </li>
+                        <li>Provided administrative assistance to departmental staff, including record keeping,
+                            procurement tasks,
+                            and documentation management.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- UET End -->
+
+            <div class="box width">
+                <h4>Internship</h4>
+                <p class="tag inline">Aug 2022 - Sep 2022</p>
+                <p>Special Communication Organization, Mirpur</p>
+            </div>
+            <div class="box width">
+                <h4>React Js Course Instructor</h4>
+                <p class="tag inline">Mar 2021 - Nov 2021</p>
+                <p>The Techrotics Lab</p>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+<script>
+    // ADD LINK TO DIV
+    const developments = document.querySelectorAll('.box');
+
+    developments.forEach((development) => {
+        const link = development.getAttribute('data-link');
+        if (link && link !== '') {
+            development.addEventListener('click', () => {
+                window.open(link, '_blank');
+            });
+            development.style.cursor = 'pointer'; // add this line
+        } else {
+            development.style.cursor = 'default'; // add this line
+        }
+    });
+    // ARROW CODE
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const educationBoxes = document.querySelectorAll('.education-box');
+
+        educationBoxes.forEach(box => {
+            const arrow = box.querySelector('.arrow');
+
+            // Add click event to the arrow
+            arrow.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event from bubbling up
+                box.classList.toggle('active');
+            });
+
+            // Prevent toggling when clicking anywhere else in the box
+            box.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        });
+    });
+
+
+    // LOGO CODE
+    document.addEventListener('DOMContentLoaded', function () {
+        const educationBoxes = document.querySelectorAll('.education-box');
+
+        educationBoxes.forEach(box => {
+            box.addEventListener('click', function () {
+                this.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+
+</html>
