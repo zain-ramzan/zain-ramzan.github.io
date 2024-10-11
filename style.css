@@ -320,7 +320,8 @@ li {
 /* Add some responsive styles for smaller screens */
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 100%;
+        margin: 0;
     }
 
     .box {
