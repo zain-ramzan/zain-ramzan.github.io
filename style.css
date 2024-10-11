@@ -335,6 +335,7 @@ li {
     .tab {
         position: fixed;
         bottom: 0;
+        left: 0;
         margin: 0;
         width: 100%;
         border-radius: 0;
