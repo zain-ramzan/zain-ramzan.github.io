@@ -16,8 +16,8 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
+* Master 2 Research Internship in Computer Science
+  * computer science laboratory of the University of Pau and Adour Countries (LIUPPA : Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour)
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users
 
