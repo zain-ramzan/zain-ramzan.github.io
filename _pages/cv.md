@@ -16,15 +16,15 @@ Education
 
 Work experience
 ======
-* Master 2 Research Internship in Computer Science
-  * computer science laboratory of the University of Pau and Adour Countries (LIUPPA : Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour)
+* Master 2 Research Internship
+  * Computer Science laboratory of the University of Pau and Adour Countries (LIUPPA : Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour)
   * Supervisor: Dr Adel Noureddine
   * Duties includes: The internship invovles studying and implementing an AI recommendation approach to study green and energy efficient software.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
+* Internship
+  * Pepsi Co Navbahar Bottling Company
   * Supervisor: Professor Hub
+  * Duties included: Merging pull requests
 
 * Summer 2015: Research Assistant
   * GitHub University
