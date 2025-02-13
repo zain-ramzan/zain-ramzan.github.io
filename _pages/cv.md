@@ -11,9 +11,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Master in Computer Sciences: Industry 4.0, Universiy of Pau and the Adour Region (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), 2025
+* B.sc in Electrical Enigneering, Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2022
 
 Work experience
 ======
