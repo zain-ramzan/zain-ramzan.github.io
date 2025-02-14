@@ -18,8 +18,8 @@ Work experience
 ======
 * Master 2 <a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Research Internship</a>
   * Computer Science laboratory of the University of Pau and Adour Countries (LIUPPA : Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour)
-  * Supervisor: <a href="https://www.noureddine.org/" target="_blank">Dr Adel Noureddine</a>
-  * Duties includes: The internship involves studying and implementing an AI recommendation approach to study green and energy efficient software.
+  * **Supervisor:** <a href="https://www.noureddine.org/" target="_blank">Dr Adel Noureddine</a>
+  * **Duties includes:** The internship involves studying and implementing an AI recommendation approach to study green and energy efficient software.
 
 * Internship
   * Pepsi Co Navbahar Bottling Company
