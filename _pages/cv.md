@@ -17,7 +17,7 @@ Education
 Work experience
 ======
 * Master 2 <a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Research Internship</a> (March 2025 - August 2025)
-  * Computer Science laboratory of the University of Pau and Adour Countries (<a href="https://liuppa.univ-pau.fr/fr/index.html" target="_blank">LIUPPA</a> : Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour)
+  * Computer Science laboratory of the University of Pau and Adour Countries (<a href="https://liuppa.univ-pau.fr/fr/index.html" target="_blank">LIUPPA</a> : Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour), Pau, France
   * **Supervisor:** <a href="https://www.noureddine.org/" target="_blank">Dr Adel Noureddine</a>
   * **Duties includes:** The internship involves studying and implementing an AI recommendation approach to study green and energy efficient software.
 
