@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* Master in Computer Sciences: <a href="https://formation.univ-pau.fr/en/programs/science-technology-health-STS/master-degree-XB/master-computer-science-L7EMC9TO//m2-industry-4-0-L7EMCSH1.html" target="_blank">Industry 4.0</a>, Universiy of Pau and the Adour Region (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), 2025
-* B.sc in Electrical Enigneering, Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2022
+* Master in Computer Sciences: <a href="https://formation.univ-pau.fr/en/programs/science-technology-health-STS/master-degree-XB/master-computer-science-L7EMC9TO//m2-industry-4-0-L7EMCSH1.html" target="_blank">Industry 4.0</a>, Universiy of Pau and the Adour Region (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), 2024-25
+* B.sc in <a href="https://must.edu.pk/electrical-engineering/" target="_blank">Electrical Enigneering</a>, Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2018-22
 
 Work experience
 ======
