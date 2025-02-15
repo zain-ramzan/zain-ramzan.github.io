@@ -7,8 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-📍 **Location:** Computer Science laboratory University of Pau and the adour Countries <a href="https://liuppa.univ-pau.fr/" target="_blank">(LIUPPA)</a>, France
-
+📍 **Location:** Computer Science laboratory of the University of Pau and the adour Countries <a href="https://liuppa.univ-pau.fr/" target="_blank">(LIUPPA)</a>, France  
 📅 **Duration:** 6 months  
 💰 **Funding:** National French ANR Agency  
 🔗 **Project:** <a href="https://www.noureddine.org/research/behave" target="_blank">BEHAVE!</a> Project  
