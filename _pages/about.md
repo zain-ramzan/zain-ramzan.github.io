@@ -7,11 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-📍 **Location:** Computer Science laboratory University of Pau and the adour Countries [(LIUPPA)](https://liuppa.univ-pau.fr/), France
+📍 **Location:** Computer Science laboratory University of Pau and the adour Countries <a href="https://liuppa.univ-pau.fr/" target="_blank">(LIUPPA)</a>, France
+
 📅 **Duration:** 6 months  
 💰 **Funding:** National French ANR Agency  
-🔗 **Project:** [BEHAVE! Project](https://www.noureddine.org/research/behave)  
-👨‍🏫 **Supervisor:** [Dr. Adel Noureddine](https://noureddine.org)  
+🔗 **Project:** <a href="https://www.noureddine.org/research/behave" target="_blank">BEHAVE!</a> Project  
+👨‍🏫 **Supervisor:** <a href="https://noureddine.org" target="_blank">Dr. Adel Noureddine</a>  
 
 ## Overview  
 I am currently working as a **research intern** on the **BEHAVE! project**, focusing on **AI-driven recommendations for energy-efficient software usage**. My role involves developing an **autonomic control system** that analyzes software usage patterns and energy consumption, providing **personalized recommendations** to help users reduce their digital carbon footprint.  
