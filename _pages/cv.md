@@ -36,7 +36,7 @@ Work experience
   <summary><a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Data Engineer Internship</a></summary>
   <ul>
     <li><strong>Duration:</strong>July 2024 - September 2024 (Remote)</li>
-    <li>PepsiCo NavBahar Bottling Company</li>
+    <li><a href="https://nbcpepsi.com/" target="_blank">Pepsi Naubahar</a> Bottling Company</li>
     <li><strong>Supervisor:</strong> <a href="https://www.linkedin.com/in/samiullah-dar-56815919a/" target="_blank"> Mr. Sami Ullah Dar</a> (Deputy. Manager Production) and <a href="https://www.linkedin.com/in/usmanshahzad786/" target="_blank"> Mr. Usman Shehzad</a></li>
     <li><strong>Duties include:</strong>coming</li>
   </ul>
