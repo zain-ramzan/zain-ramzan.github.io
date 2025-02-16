@@ -41,7 +41,8 @@ Work experience
     <li><strong>Duties include:</strong>coming...</li>
   </ul>
 </details>
-  
+
+
 Skills
 ======
 * Skill 1
