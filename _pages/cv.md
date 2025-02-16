@@ -26,7 +26,6 @@ Work experience
   <summary>Master 2 <a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Research Internship</a> (March 2025 - August 2025)</summary>
   <ul>
     <li><strong>Duration:</strong>March 2025 - August 2025</li>
-    <li><strong>Location:</strong>Pau, France</li>
     <li>Computer Science laboratory of the University of Pau and Adour Countries (<a href="https://liuppa.univ-pau.fr/fr/index.html" target="_blank">LIUPPA</a>: Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour), Pau, France</li>
     <li><strong>Supervisor:</strong> <a href="https://www.noureddine.org/" target="_blank">Dr Adel Noureddine</a></li>
     <li><strong>Duties include:</strong> The internship involves studying and implementing an AI recommendation approach to study green and energy-efficient software.</li>
@@ -36,24 +35,12 @@ Work experience
 <details>
   <summary><a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Data Engineer Internship</a></summary>
   <ul>
-    <li><strong>Duration:</strong>July 2024 - September 2024</li>
-    <li><strong>Location:</strong>Remote</li>
+    <li><strong>Duration:</strong>July 2024 - September 2024 (Remote)</li>
     <li>PepsiCo NavBahar Bottling Company</li>
-    <li><strong>Supervisor:</strong> <a href="https://www.noureddine.org/" target="_blank">Dr Adel Noureddine</a></li>
-    <li><strong>Duties include:</strong> The internship involves studying and implementing an AI recommendation approach to study green and energy-efficient software.</li>
+    <li><strong>Supervisor:</strong> <a href="https://www.linkedin.com/in/samiullah-dar-56815919a/" target="_blank"> Mr. Sami Ullah Dar (Deputy. Manager Production)</a> and <a href="https://www.linkedin.com/in/usmanshahzad786/" target="_blank"> Mr. Usman Shehzad</li>
+    <li><strong>Duties include:</strong>coming...</li>
   </ul>
 </details>
-
-
-* Internship
-  * Pepsi Co Navbahar Bottling Company
-  * Supervisor: Professor Hub
-  * Duties included: Merging pull requests
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
 Skills
 ======
