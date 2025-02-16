@@ -38,7 +38,7 @@ Work experience
     <li><strong>Duration:</strong>July 2024 - September 2024 (Remote)</li>
     <li>PepsiCo NavBahar Bottling Company</li>
     <li><strong>Supervisor:</strong> <a href="https://www.linkedin.com/in/samiullah-dar-56815919a/" target="_blank"> Mr. Sami Ullah Dar (Deputy. Manager Production)</a> and <a href="https://www.linkedin.com/in/usmanshahzad786/" target="_blank"> Mr. Usman Shehzad</li>
-    <li><strong>Duties include:</strong>coming...</li>
+    <li><strong>Duties include:</strong>coming</li>
   </ul>
 </details>
 
