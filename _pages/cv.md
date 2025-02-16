@@ -33,7 +33,7 @@ Work experience
 </details>
 
 <details>
-  <summary><a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Data Engineer Internship</a></summary>
+  <summary>Data Engineer <a href="#" target="_blank">Internship</a></summary>
   <ul>
     <li><strong>Duration:</strong>July 2024 - September 2024 (Remote)</li>
     <li><a href="https://nbcpepsi.com/" target="_blank">Pepsi Naubahar</a> Bottling Company</li>
@@ -41,6 +41,37 @@ Work experience
     <li><strong>Duties include:</strong>coming</li>
   </ul>
 </details>
+
+<details>
+  <summary><a href="#" target="_blank">Teaching Assistant</a></summary>
+  <ul>
+    <li><strong>Duration:</strong>December 2023 - May 2024</li>
+    <li><a href="#" target="_blank">Electrical Engineering</a> Dept. University of Engineering and Technology (UET), Lahore (Narowal Campus)</li>
+    <li><strong>Supervisor:</strong> <a href="https://www.linkedin.com/in/samiullah-dar-56815919a/" target="_blank"> Mr. Waqas Tariq Toor</a> (Chairman Electrical Engineering Dept.)</li>
+    <li><strong>Duties include:</strong>coming</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Training <a href="#" target="_blank">Internship</a></summary>
+  <ul>
+    <li><strong>Duration:</strong>August 2022 - September 2022</li>
+    <li>Special Communication Organization (<a href="https://sco.org/" target="_blank">SCO</a>), Mirpur Azad Kashmir</li>
+    <li><strong>Supervisor:</strong> Mr. Mazhar Hussain</li>
+    <li><strong>Duties include:</strong>coming</li>
+  </ul>
+</details>
+
+
+<details>
+  <summary>React Js Course <a href="#" target="_blank">Instructor</a></summary>
+  <ul>
+    <li><strong>Duration:</strong>September 2021 - December 2021(Remote)</li>
+    <li><a href="#" target="_blank">The Techrotics Lab</a></li>
+    <li><strong>Duties include:</strong>coming</li>
+  </ul>
+</details>
+
 
 
 Skills
