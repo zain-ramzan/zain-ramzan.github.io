@@ -23,7 +23,7 @@ Education
 Work experience
 ======
 <details>
-  <summary>Master 2 <a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Research Internship</a> (March 2025 - August 2025)</summary>
+  <summary>Master 2 <a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Research Internship</a></summary>
   <ul>
     <li><strong>Duration:</strong>March 2025 - August 2025</li>
     <li>Computer Science laboratory of the University of Pau and Adour Countries (<a href="https://liuppa.univ-pau.fr/fr/index.html" target="_blank">LIUPPA</a>: Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour), Pau, France</li>
