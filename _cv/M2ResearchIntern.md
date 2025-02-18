@@ -1,9 +1,11 @@
 ---
-title: "Teaching experience 1"
-collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+title: 'M2 Research Internship'
+date: 2025-03-03
+permalink: /cv/M2ResearchInternship
+tags:
+  - cool posts
+  - category1
+  - category2
 ---
+
+This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
