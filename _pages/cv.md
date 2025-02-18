@@ -18,8 +18,6 @@ Education
 
 Experience
 ======
-{% include M2ResearchIntern.md %}
-
 * Master 2 Research Internship
   * LIUPPA, Pau, France
   * **Supervisor:** Dr. Adel Noureddine
