@@ -2,7 +2,7 @@
 title: "Teaching experience 1"
 collection: teaching
 type: "Undergraduate course"
-permalink: /cv/researchinternship
+permalink: /cv/M2ResearchIntern
 venue: "University 1, Department"
 date: 2014-01-01
 location: "City, Country"
