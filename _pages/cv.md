@@ -27,7 +27,7 @@ Experience
   * **Supervisor:** Mr. Sami Ullah Dar (Deputy. Manager Production) and Mr. Usman Shehzad
 * Teaching Assistant
   * Electrical Engineering Dept., University of Engineering and Technology (UET), Lahore (Narowal Campus)
-  * **Supervisor:** Mr. Waqas Tariq Toor (Chairman Electrical Engineering Dept.)
+  * **Supervisor:** Dr. Waqas Tariq Toor (Chairman Electrical Engineering Dept.)
 * Training Internship
   * Special Communication Organization (SCO), Mirpur Azad Kashmir
   * **Supervisor:** Mr. Mazhar Hussain
