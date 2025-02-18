@@ -16,7 +16,7 @@ Education
 * B.sc in Electrical Engineering
   * Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2018-22
 
-Work experience
+Experience
 ======
 * Master 2 Research Internship
   * LIUPPA, Pau, France
