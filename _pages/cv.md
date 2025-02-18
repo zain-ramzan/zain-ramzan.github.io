@@ -18,7 +18,7 @@ Education
 
 Experience
 ======
-* ![Master 2 Research Internship](/_cv/M2ResearchIntern.md)
+* ![Master 2 Research Internship](./_cv/M2ResearchIntern.md)
   * LIUPPA, Pau, France
   * **Supervisor:** Dr. Adel Noureddine
   * **Duties include:** The internship involves studying and implementing an AI recommendation approach to study green and energy-efficient software.
