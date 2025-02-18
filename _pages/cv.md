@@ -11,14 +11,10 @@ redirect_from:
 
 Education
 ======
-<details>
-  <summary>Master in Computer Sciences: Industry 4.0</summary>
-  Universiy of Pau and the Adour Region (<a href="https://formation.univ-pau.fr/en/programs/science-technology-health-STS/master-degree-XB/master-computer-science-L7EMC9TO//m2-industry-4-0-L7EMCSH1.html" target="_blank">UPPA</a>) & University of Technology of Tarbes (UTTOP, old ENIT), France, 2024-25
-</details>
-<details>
-  <summary>B.sc in Electrical Engineering</summary>
-  Mirpur University of Science and Technology (<a href="https://must.edu.pk/electrical-engineering/" target="_blank">MUST</a>), Mirpur Azad Kashmir, Pakistan, 2018-22
-</details>
+* Master in Computer Sciences: Industry 4.0
+  * Universiy of Pau and the Adour Region (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), France, 2024-25
+* B.sc in Electrical Engineering
+  * Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2018-22
 
 Work experience
 ======
