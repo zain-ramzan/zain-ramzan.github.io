@@ -1,11 +1,11 @@
 ---
-title: 'Testing'
-date: 2025-03-13
-permalink: /cv/researchInternship/
-tags:
-  - cool posts
-  - category1
-  - category2
+title: "Teaching experience 1"
+collection: teaching
+type: "Undergraduate course"
+permalink: /cv/researchinternship
+venue: "University 1, Department"
+date: 2014-01-01
+location: "City, Country"
 ---
 
-This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
+This is a description of a teaching experience. You can use markdown like any other post.
