@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "M2 Research Internship -  AI Recommendation Approach for Green Software"
 author_profile: true
 redirect_from: 
   - /about/
