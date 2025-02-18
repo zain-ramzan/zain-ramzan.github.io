@@ -1,7 +1,7 @@
 ---
 title: 'M2 Research Internship'
 date: 2025-03-03
-permalink: /cv/M2ResearchInternship
+permalink: /cv/M2ResearchIntern
 tags:
   - cool posts
   - category1
