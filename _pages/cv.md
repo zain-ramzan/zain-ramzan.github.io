@@ -12,61 +12,28 @@ redirect_from:
 Education
 ======
 * Master in Computer Sciences: Industry 4.0
-  * Universiy of Pau and the Adour Region (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), France, 2024-25
+  * Universiy of Pau and Adour Countries (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), France, 2024-25
 * B.sc in Electrical Engineering
   * Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2018-22
 
 Work experience
 ======
-<details>
-  <summary>Master 2 <a href="https://www.noureddine.org/research/behave/internship-2025" target="_blank">Research Internship</a></summary>
-  <ul>
-    <li><strong>Duration:</strong>March 2025 - August 2025</li>
-    <li>Computer Science laboratory of the University of Pau and Adour Countries (<a href="https://liuppa.univ-pau.fr/fr/index.html" target="_blank">LIUPPA</a>: Laboratoire Informatique de l'Université de Pau et des Pays de l'Adour), Pau, France</li>
-    <li><strong>Supervisor:</strong> <a href="https://www.noureddine.org/" target="_blank">Dr Adel Noureddine</a></li>
-    <li><strong>Duties include:</strong> The internship involves studying and implementing an AI recommendation approach to study green and energy-efficient software.</li>
-  </ul>
-</details>
+* Master 2 Research Internship
+  * LIUPPA, Pau, France
+  * **Supervisor:** Dr. Adel Noureddine
+  * **Duties include:** The internship involves studying and implementing an AI recommendation approach to study green and energy-efficient software.
+* Data Engineer Intern
+  * Pepsi Naubahar Bottling Company (Remote)
+  * **Supervisor:** Mr. Sami Ullah Dar (Deputy. Manager Production) and Mr. Usman Shehzad
+* Teaching Assistant
+  * Electrical Engineering Dept., University of Engineering and Technology (UET), Lahore (Narowal Campus)
+  * **Supervisor:** Mr. Waqas Tariq Toor (Chairman Electrical Engineering Dept.)
+* Training Internship
+  * Special Communication Organization (SCO), Mirpur Azad Kashmir
+  * **Supervisor:** Mr. Mazhar Hussain
+* React Js Course Instructor
+  * The Techrotics Lab (Remote)
 
-<details>
-  <summary>Data Engineer <a href="#" target="_blank">Internship</a></summary>
-  <ul>
-    <li><strong>Duration:</strong>July 2024 - September 2024 (Remote)</li>
-    <li><a href="https://nbcpepsi.com/" target="_blank">Pepsi Naubahar</a> Bottling Company</li>
-    <li><strong>Supervisor:</strong> <a href="https://www.linkedin.com/in/samiullah-dar-56815919a/" target="_blank"> Mr. Sami Ullah Dar</a> (Deputy. Manager Production) and <a href="https://www.linkedin.com/in/usmanshahzad786/" target="_blank"> Mr. Usman Shehzad</a></li>
-    <li><strong>Duties include:</strong>coming</li>
-  </ul>
-</details>
-
-<details>
-  <summary><a href="#" target="_blank">Teaching Assistant</a></summary>
-  <ul>
-    <li><strong>Duration:</strong>December 2023 - May 2024</li>
-    <li><a href="#" target="_blank">Electrical Engineering</a> Dept. University of Engineering and Technology (UET), Lahore (Narowal Campus)</li>
-    <li><strong>Supervisor:</strong> <a href="https://www.linkedin.com/in/samiullah-dar-56815919a/" target="_blank"> Mr. Waqas Tariq Toor</a> (Chairman Electrical Engineering Dept.)</li>
-    <li><strong>Duties include:</strong>coming</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Training <a href="#" target="_blank">Internship</a></summary>
-  <ul>
-    <li><strong>Duration:</strong>August 2022 - September 2022</li>
-    <li>Special Communication Organization (<a href="https://sco.org/" target="_blank">SCO</a>), Mirpur Azad Kashmir</li>
-    <li><strong>Supervisor:</strong> Mr. Mazhar Hussain</li>
-    <li><strong>Duties include:</strong>coming</li>
-  </ul>
-</details>
-
-
-<details>
-  <summary>React Js Course <a href="#" target="_blank">Instructor</a></summary>
-  <ul>
-    <li><strong>Duration:</strong>September 2021 - December 2021(Remote)</li>
-    <li><a href="#" target="_blank">The Techrotics Lab</a></li>
-    <li><strong>Duties include:</strong>coming</li>
-  </ul>
-</details>
 
 
 
