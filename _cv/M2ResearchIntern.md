@@ -1,7 +1,7 @@
 ---
 title: 'M2ResearchIntern'
 date: 2012-08-14
-permalink: /cv/2025/03/M2ResearchIntern/
+permalink: /cv/M2ResearchIntern/
 tags:
   - cool posts
   - category1
