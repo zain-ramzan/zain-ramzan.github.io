@@ -19,7 +19,7 @@ Education
 Experience
 ======
 * [Master 2 Research Internship](/cv/M2ResearchInternship)
-  * LIUPPA, Pau, France
+  * LIUPPA, Pau, France (March 2025 - Present)
   * **Supervisor:** Dr. Adel Noureddine
   * **Duties include:** The internship involves studying and implementing an AI recommendation approach to study green and energy-efficient software.
 * Data Engineer Intern
@@ -61,6 +61,18 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Volunteer Experience
 ======
-* Currently signed in to 43 different slack teams
+* Moderator- Lead Instructor
+  * iCodeGuru (Aug 2023– Present)
+  * (Remote) Silicon Valley, USA
+  * Delivered comprehensive lessons in Python, Data Structures, and Algorithms, Machine Learning and Deep learning, emphasizing problem-solving through Leetcode challenges.
+  * Mentored students in preparation for international hackathons and coding competitions, fostering innovation and teamwork.
+* Frontend Developer and Campus Ambassador
+  * AWS Community Pakistan (April 2021– Sept 2023)
+  * (Remote) Lahore, Pakistan
+  * Served as a Web Developer, Campus Ambassador, and Documentation Team at AWS Community Pakistan on AWS Community Day, contributing to the success of this exciting event.
+* Graphic Designer Head
+  * Positive Pakistan (Feb 2019– Sept 2022)
+  * Mirpur Chapter, Pakistan
+  * Led as the Graphic Designer Head at Positive Pakistan (MUST Chapter) for an impactful 3-year tenure, contributing to the organization’s creative initiatives and visual identity.
