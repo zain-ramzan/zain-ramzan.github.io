@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Master in Computer Sciences: Industry 4.0
+* [Master in Computer Sciences: Industry 4.0](/cv/MasterCS)
   * Universiy of Pau and Adour Countries (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), France, 2024-25
 * B.sc in Electrical Engineering
   * Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2018-22
