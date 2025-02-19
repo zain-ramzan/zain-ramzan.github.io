@@ -6,7 +6,6 @@ author_profile: true
 ---
 
 ## 2025
-* Secured 184/536 position (Team: iCoders ) Organized by the MITT Club of the Massachusetts Institute of Technology.
 
 ## 2023
 * Bachelor’s Final Year Project was selected by the Pakistan Engineering Council for financial assistance.
