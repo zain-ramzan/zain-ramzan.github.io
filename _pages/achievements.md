@@ -4,7 +4,9 @@ title: "Acheivements"
 permalink: /achievements/
 author_profile: true
 ---
-## 2025
+
+2025
+---
 * Secured 184/536 position (Team: iCoders ) Organized by the MITT Club of the Massachusetts Institute of Technology.
 * Bachelor’s Final Year Project was selected by the Pakistan Engineering Council for financial assistance.
 * Secured 10 million PKR funding from the Ministry of Planning and Development to transform Final Year Project idea into a startup.
