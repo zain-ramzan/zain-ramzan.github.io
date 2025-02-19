@@ -39,12 +39,9 @@ Experience
 
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming Languages:** Python, R, C++, SQL, JavaScript, MATLAB
+* **Tools and Areas:** NumPy, Pandas, TensorFlow, Scikit-learn, PyTorch, OpenCV, Open3D, YOLO, Docker, Postman, Git, MySQL, SQL Server, MongoDB, SQLite, Visual Studio Code, Jupyter Notebook, PyCharm
+* **Frameworks:** ReactJS, Redux, Node.js, Express.js, Flask, Angular, Bootstrap, Material UI, React Native
 
 Publications
 ======
