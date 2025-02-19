@@ -12,8 +12,8 @@ author_profile: true
 * Secured 10 million PKR funding from the Ministry of Planning and Development to transform Final Year Project idea into a startup.
 * Achieved 3rd place in an International Hackathon.
 
-## 2017
-* Awarded 1st position in a Calligraphy Competition at the District Narowal level (2017).
+## 2015
+* Awarded 1st position in a Calligraphy Competition at the District Narowal level (2015).
 
 ## 2013
 * Secured 3rd position in the State Talent Test for 8th grade, organized by the All Pakistan Private School Association (2013).
