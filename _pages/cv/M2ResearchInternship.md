@@ -6,7 +6,7 @@ layout: single
 
 
 📍 **Location:** Computer Science laboratory of the University of Pau and the adour Countries <a href="https://liuppa.univ-pau.fr/" target="_blank">(LIUPPA)</a>, France  
-📅 **Duration:** 6 months  
+📅 **Duration:** March 2025 - Present  
 💰 **Funding:** National French ANR Agency  
 🔗 **Project:** <a href="https://www.noureddine.org/research/behave" target="_blank">BEHAVE!</a> Project  
 👨‍🏫 **Supervisor:** <a href="https://noureddine.org" target="_blank">Dr. Adel Noureddine</a>  
