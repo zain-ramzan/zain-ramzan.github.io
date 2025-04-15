@@ -9,6 +9,6 @@ tags:
 
 Agriculture in 2030 is set to be transformed by data science. With growing populations and climate challenges, data-driven approaches are crucial for efficient and sustainable farming.
 
-Read thoroughly on [LinkedIn](https://www.linkedin.com/posts/zainramzan_agriculture-datascience-precisionfarming-activity-7255494267224162304-H36P?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM)
+Read thoroughly on <a href="https://www.linkedin.com/posts/zainramzan_agriculture-datascience-precisionfarming-activity-7255494267224162304-H36P?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM" target="_blank">LinkedIn</a>
  
 ------
