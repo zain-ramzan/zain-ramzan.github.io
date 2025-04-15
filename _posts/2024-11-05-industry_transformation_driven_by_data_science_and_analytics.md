@@ -11,6 +11,6 @@ tags:
 
 In today’s fast-evolving world, the cosmetics industry is seeing a massive transformation driven by data science and analytics. Data is no longer just about understanding the past; it’s about predicting trends, personalizing experiences, and enhancing product innovation.
 
-Read thoroughly on [LinkedIn](https://www.linkedin.com/posts/zainramzan_datascience-cosmeticsindustry-dataanalytics-activity-7256619717317038081-eLGN?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM)
+Read thoroughly on <a href="https://www.linkedin.com/posts/zainramzan_datascience-cosmeticsindustry-dataanalytics-activity-7256619717317038081-eLGN?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM" target="_blank">LinkedIn</a>
  
 ------
