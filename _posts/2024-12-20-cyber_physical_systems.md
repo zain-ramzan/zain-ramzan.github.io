@@ -12,6 +12,6 @@ Cyber-physical system is the combination of interconnected physical systems and 
 
 CPS blends the physical world with computational power, creating systems that interact seamlessly through sensors, software, and networking.
 
-Read thoroughly on [LinkedIn](https://www.linkedin.com/posts/zainramzan_cyberphysicalsystems-industryfourthrevolution-activity-7255843563710599168-Uua7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM)
+Read thoroughly on <a href="https://www.linkedin.com/posts/zainramzan_cyberphysicalsystems-industryfourthrevolution-activity-7255843563710599168-Uua7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM" target="_blank">LinkedIn</a>
  
 ------
