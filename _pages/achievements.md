@@ -8,6 +8,7 @@ author_profile: true
 ## 2025
 * [March 2025] Selected as a Section Leader (Teacher) for Code in Place 2025 organized by Standford University
 * [March 2025] Solved 9/9 Puzzles in CS50x Puzzle Day 2025 organized by Harvard University
+
 ## 2023
 * Secured 10 million PKR funding from the Ministry of Planning and Development to transform Final Year Project idea into a startup.
 * Bachelor’s Final Year Project was selected by the Pakistan Engineering Council for financial assistance.
