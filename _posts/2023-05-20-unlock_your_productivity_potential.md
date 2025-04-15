@@ -1,7 +1,7 @@
 ---
 title: 'Unlock Your Productivity Potential: Strategies to Maximize Efficiency'
 date: 2023-05-20
-permalink: /posts/2023/05/unlock_productive_potential
+permalink: https://www.linkedin.com/pulse/unlock-your-productivity-potential-strategies-maximize-zain-ramzan?trackingId=ALjBIOYmSPa0T7UQZI2BnA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BOiIyBUFFS%2FOoFPFGolmTvQ%3D%3D
 tags:
   - linkedin
   - productivity
