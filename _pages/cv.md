@@ -47,6 +47,7 @@ Skills
 * **Tools and Areas:** NumPy, Pandas, TensorFlow, Scikit-learn, PyTorch, OpenCV, Open3D, YOLO, Docker, Postman, Git, MySQL, SQL Server, MongoDB, SQLite, Visual Studio Code, Jupyter Notebook, PyCharm
 * **Frameworks:** ReactJS, Redux, Node.js, Express.js, Flask, Angular, Bootstrap, Material UI, React Native
 
+<!--
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
@@ -64,7 +65,7 @@ Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+-->
 Volunteer Experience
 ======
 * Moderator- Lead Instructor
