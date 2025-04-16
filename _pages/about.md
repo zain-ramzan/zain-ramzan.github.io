@@ -11,4 +11,4 @@ I’m Zain Ramzan, a Master’s student in Computer Sciences specializing in Ind
 ## Lastest News
 * [March 2025] Selected as a Section Leader (Teacher) for Code in Place 2025 organized by Standford University
 * [March 2025] Solved 9/9 Puzzles in CS50x Puzzle Day 2025 organized by Harvard University
-* [March 2025] Started my M2 Master Internship at LIUPPA under the supervision of [Dr. Adel Noureddine](https://www.noureddine.org/)
+* [March 2025] Started my M2 Research Internship at LIUPPA under the supervision of [Dr. Adel Noureddine](https://www.noureddine.org/)
