@@ -77,9 +77,9 @@ Volunteer Experience
   * Mentored students in preparation for international hackathons and coding competitions, fostering innovation and teamwork.
 * Frontend Developer and Campus Ambassador
   * AWS Community Pakistan (April 2021– Sept 2023)
-  * (Remote) Lahore, Pakistan
-  * Served as a Web Developer, Campus Ambassador, and Documentation Team at AWS Community Pakistan on AWS Community Day, contributing to the success of this exciting event.
+  * Lahore, Pakistan
+  * Served as a Web Developer, MUST Campus Ambassador, and Documentation Team at AWS Community Pakistan on AWS Community Day, contributing to the success of this exciting event.
 * Graphic Designer Head
   * Positive Pakistan (Feb 2019– Sept 2022)
-  * Mirpur Chapter, Pakistan
+  * MUST Mirpur Chapter, Pakistan
   * Led as the Graphic Designer Head at Positive Pakistan (MUST Chapter) for an impactful 3-year tenure, contributing to the organization’s creative initiatives and visual identity.
