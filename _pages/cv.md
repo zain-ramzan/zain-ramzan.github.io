@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* [Master in Computer Sciences: Industry 4.0](/cv/MasterCS)
+* Master in Computer Sciences: Industry 4.0
   * Universiy of Pau and Adour Countries (UPPA) & University of Technology of Tarbes (UTTOP, old ENIT), France, 2024-25
 * B.sc in Electrical Engineering
   * Mirpur University of Science and Technology (MUST), Mirpur Azad Kashmir, Pakistan, 2018-22
@@ -23,16 +23,20 @@ Experience
   * **Supervisor:** Dr. Adel Noureddine
   * **Duties include:** The internship involves studying and implementing an AI recommendation approach to study green and energy-efficient software.
 * Data Engineer Intern
-  * Pepsi Naubahar Bottling Company (Remote)
+  * Pepsi Naubahar Bottling Company, Pakistan (July 2024 - Aug 2024)
   * **Supervisor:** Mr. Sami Ullah Dar (Deputy. Manager Production) and Mr. Usman Shehzad
 * Teaching Assistant
-  * Electrical Engineering Dept., University of Engineering and Technology (UET), Lahore (Narowal Campus)
+  * Electrical Engineering Dept., University of Engineering and Technology (UET), Lahore (Narowal Campus) (Dec 2023 - May 2024)
   * **Supervisor:** Dr. Waqas Tariq Toor (Chairman Electrical Engineering Dept.)
+* Business Intelligence Specialist
+  * Fiverr (Jun 2021 - Jan 2023)
+  * Helped businesses and startups worldwide grow by making **data-driven decisions**.
+  * **Skills:** Data Analysis, Business Intelligence, Data Science
 * Training Internship
-  * Special Communication Organization (SCO), Mirpur Azad Kashmir
+  * Special Communication Organization (SCO), Mirpur Azad Kashmir (Aug 2022 - Sep 2022)
   * **Supervisor:** Mr. Mazhar Hussain
 * React Js Course Instructor
-  * The Techrotics Lab (Remote)
+  * The Techrotics Lab (Sep 2021 - Dec 2021)
 
 
 
