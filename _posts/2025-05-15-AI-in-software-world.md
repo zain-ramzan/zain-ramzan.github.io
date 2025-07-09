@@ -1,7 +1,7 @@
 ---
-title: "[How AI is quietly becoming our planet's energy ally in the software world](https://www.linkedin.com/posts/zainramzan_greensoftware-aiforgood-sustainabletech-activity-7328736393617104897-HvOB?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM)"
+title: <a href="https://www.linkedin.com/posts/zainramzan_greensoftware-aiforgood-sustainabletech-activity-7328736393617104897-HvOB?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpO2oUBpaFQY7EUpXyTvd3kfNRba73FxtM" target="_blank">How AI is quietly becoming our planet's energy ally in the software world</a>
 date: 2025-05-15
-permalink: /blog-posts/ai-becoming-planet-energy-ally-in-software-world
+permalink:
 tags:
   - Green Software
   - AI for Good
