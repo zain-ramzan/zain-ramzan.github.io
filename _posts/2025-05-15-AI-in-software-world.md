@@ -2,13 +2,7 @@
 title: How AI is quietly becoming our planet's energy ally in the software world
 date: 2025-05-15
 permalink: /articles/AI_in_software_energy_efficiency 
-tags:
-  - Green Software
-  - AI for Good
-  - Sustainable Tech
-  - Digital Sustainability
-  - Climate Action
----
+
 Did you know that global computing currently consumes more electricity than entire countries? And we're only increasing our digital appetite... 
 
 Here's the game-changer: AI recommendation systems are now being deployed to make our software greener without sacrificing performance or user experience.
