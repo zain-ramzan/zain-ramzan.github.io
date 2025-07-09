@@ -1,7 +1,7 @@
 ---
 title: How AI is quietly becoming our planet's energy ally in the software world
 date: 2025-05-15
-permalink: /blog-posts/cyber_physical_systems
+permalink: /blog-posts/AI in software energy efficiency 
 tags:
   - Green Software
   - AI for Good
