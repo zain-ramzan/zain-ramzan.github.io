@@ -1,7 +1,7 @@
 ---
 title: "Brain Tumor Detection using CNN"
 excerpt: "typing...<br/><img src='/images/brain-tumor-dedection.png'>"
-collection: portfolio
+collection: project
 
 ---
 
