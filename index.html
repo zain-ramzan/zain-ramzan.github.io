@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/profileImage_ZainRamzan.png">
+    <title>Zain Ramzan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0b64c1',
+                        secondary: '#3b82f6',
+                        accent: '#93c5fd',
+                        dark: '#1e293b',
+                        light: '#1973d8',
+                        grey: '#9f9f9f'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Existing styles */
+        body {
+            background-color: #f3f2ee;
+        }
+
+        .sidebar {
+            scrollbar-width: thin;
+            scrollbar-color: white transparent;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background-color: --var(bg-primary);
+            border-radius: 3px;
+        }
+
+        .content-section {
+            transition: opacity 0.3s ease;
+        }
+
+        .active-section {
+            opacity: 1;
+            display: block;
+        }
+
+        .inactive-section {
+            opacity: 0;
+            display: none;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        /* New responsive navigation styles */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #0077B5;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .mobile-nav-title {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .mobile-nav-btn {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            background: --var(bg-primary);
+            padding: 0 20px 20px;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        .mobile-menu-btn {
+            width: 100%;
+            text-align: left;
+            padding: 12px 15px;
+            color: white;
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-menu-btn i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        /* Adjust sidebar for mobile */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                height: auto;
+                display: none;
+            }
+
+            .mobile-nav {
+                display: block;
+            }
+
+            .main-content {
+                margin-top: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body class="text-dark font-sans">
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-title">Zain Ramzan</div>
+            <button class="mobile-nav-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <button onclick="showSection('about')" class="mobile-menu-btn">
+                <i class="fas fa-user"></i> About
+            </button>
+            <button onclick="showSection('achievements')" class="mobile-menu-btn">
+                <i class="fas fa-user"></i> Achievements
+            </button>
+            <button onclick="showSection('cv')" class="mobile-menu-btn">
+                <i class="fas fa-file-alt"></i> CV
+            </button>
+            <button onclick="showSection('projects')" class="mobile-menu-btn">
+                <i class="fas fa-flask"></i> Projects
+            </button>
+            <button onclick="showSection('publications')" class="mobile-menu-btn">
+                <i class="fas fa-book"></i> Publications
+            </button>
+            <button onclick="showSection('articles')" class="mobile-menu-btn">
+                <i class="fas fa-newspaper"></i> Articles
+            </button>
+            <!-- <button onclick="showSection('gallery')" class="mobile-menu-btn">
+                <i class="fas fa-images"></i> Gallery
+            </button> -->
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar w-full md:w-64 bg-primary text-white p-6 md:fixed md:h-screen overflow-y-auto">
+            <div class="flex flex-col items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 mb-4 overflow-hidden">
+                    <div class="bg-gray-300 w-full h-full flex items-center justify-center">
+                        <!-- <i class="fas fa-user-graduate text-4xl text-gray-500"></i> -->
+                        <img src="images/profileImage_ZainRamzan.png" alt="">
+                    </div>
+                </div>
+                <h1 class="text-xl font-bold">Zain Ramzan</h1>
+                <p class="text-center mt-1">Research Intern at LIUPPA</p>
+                <p class="text-sm"><i class="fas fa-location-dot mr-1"></i> Pau, France</p>
+            </div>
+
+            <nav class="space-y-2 border-t border-accent mt-3 pt-1">
+                <button onclick="showSection('about')"
+                    class="nav-btn w-full text-left py-1 px-4 rounded-lg flex items-center hover:bg-light transition-colors duration-200">
+                    <i class="fas fa-user mr-3"></i> About
+                </button>
+                <button onclick="showSection('achievements')"
+                    class="nav-btn w-full text-left py-1 px-4 rounded-lg flex items-center hover:bg-light transition-colors duration-200">
+                    <i class="fa-solid fa-medal mr-3">‌</i> Achievements
+                </button>
+                <button onclick="showSection('cv')"
+                    class="nav-btn w-full text-left py-1 px-4 rounded-lg flex items-center hover:bg-light transition-colors duration-200">
+                    <i class="fas fa-file-alt mr-3"></i> CV
+                </button>
+                <button onclick="showSection('projects')"
+                    class="nav-btn w-full text-left py-1 px-4 rounded-lg flex items-center hover:bg-light transition-colors duration-200">
+                    <i class="fas fa-flask mr-3"></i> Projects
+                </button>
+                <button onclick="showSection('publications')"
+                    class="nav-btn w-full text-left py-1 px-4 rounded-lg flex items-center hover:bg-light transition-colors duration-200">
+                    <i class="fas fa-book mr-3"></i> Publications
+                </button>
+                <button onclick="showSection('articles')"
+                    class="nav-btn w-full text-left py-1 px-4 rounded-lg flex items-center hover:bg-light transition-colors duration-200">
+                    <i class="fas fa-newspaper mr-3"></i> Articles
+                </button>
+                <!-- <button onclick="showSection('gallery')"
+                    class="nav-btn w-full text-left py-1 px-4 rounded-lg flex items-center hover:bg-light transition-colors duration-200">
+                    <i class="fas fa-images mr-3"></i> Gallery
+                </button> -->
+            </nav>
+
+            <div class="mt-3 pt-1 border-t border-accent">
+                <h3 class="font-semibold">Contact</h3>
+                <!-- <ul class="space-y-2"> -->
+                <ul>
+                    <!-- <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-accent"></i>
+                        <span>jane.smith@university.edu</span>
+                    </li> -->
+                    <li class="flex items-center px-4 pt-1">
+                        <a href="https://www.linkedin.com/in/zainramzan" target="_blank" class="flex items-center">
+                            <i class="fab fa-linkedin mr-3"></i>
+                            <span>zainramzan</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center px-4 pt-1">
+                        <a href="https://www.github.com/zain-ramzan" target="_blank" class="flex items-center">
+                            <i class="fab fa-github mr-3"></i>
+                            <span>zain-ramzan</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 md:ml-64 main-content">
+            <!-- About Section -->
+            <section id="about" class="content-section active-section p-6 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-3xl font-bold text-primary mb-6">About Me</h1>
+                    <div class="bg-white rounded-xl p-6 mb-8">
+                        <p class="mb-4">Hi, and thank you for visiting my profile. I am Zain Ramzan, a Master student in
+                            Computer Sciences specializing in Industry 4.0 at the University of Pau and Adour Countries,
+                            France.</p>
+                        <p class="mb-4">I am passionate about applying advanced technologies to solve complex problems.
+                            I have worked on diverse projects ranging from real-time object detection to
+                            energy-efficient software systems, and I enjoy mentoring and collaborating on innovative
+                            tech solutions.</p>
+                        <p>Currently, I am working as a Research Intern at Computer Science laboratory UPPA (LIUPPA) on
+                            the BEHAVE! project under the supervision of Dr. Adel Noureddine, focusing on AI-driven
+                            recommendations for energy-efficient software usage. My role involves developing algorithms
+                            to categorize the software applications and make decisions based on their category and user
+                            profile.</p>
+                    </div>
+
+                    <div class="bg-white rounded-xl p-6 mb-8">
+                        <h2 class="text-xl font-semibold text-primary mb-4">Latest News</h2>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">May
+                                    2025</span> Wrote a Technical Article on How AI is quietly becoming our planet’s
+                                energy ally in the software world</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">April
+                                    2025</span> Selected as a Section Leader for Code in Place 2025 organized by
+                                Stanford University</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">April
+                                    2025</span> Solved 9/9 Puzzles in CS50x Puzzle Day 2025 organized by Harvard
+                                University</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">March
+                                    2025</span> Started my M2 Research Internship at LIUPPA under the supervision of Dr.
+                                Adel Noureddine</li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-xl p-6">
+                            <h2 class="text-xl font-semibold text-primary mb-4">Research Interests</h2>
+                            <ul class="list-disc pl-5 space-y-2">
+                                <li>Genetic mechanisms of aging</li>
+                                <li>CRISPR-based gene therapies</li>
+                                <li>Stem cell regeneration</li>
+                                <li>Telomere biology</li>
+                                <li>Cancer genetics</li>
+                                <li>Personalized medicine</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6">
+                            <h2 class="text-xl font-semibold text-primary mb-4">Education</h2>
+                            <div class="space-y-4">
+                                <div>
+                                    <h3 class="font-semibold">PhD in Molecular Biology</h3>
+                                    <p class="text-secondary">Stanford University | 2018-2023</p>
+                                    <p class="text-sm mt-1">Thesis: "Genetic Regulation of Cellular Aging Pathways"</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">MSc in Biotechnology</h3>
+                                    <p class="text-secondary">MIT | 2016-2018</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">BSc in Biology</h3>
+                                    <p class="text-secondary">Harvard University | 2012-2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements" class="content-section inactive-section p-6 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-3xl font-bold text-primary mb-6">Achievements</h1>
+
+                    <div class="bg-white rounded-xl p-6 mb-8">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">April
+                                    2025</span> Selected as a Section Leader (Teacher) for Code in Place 2025 organized
+                                by Stanford University</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">April
+                                    2025</span> Solved 9/9 Puzzles in CS50x Puzzle Day 2025 organized by Harvard
+                                University</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">July
+                                    2023</span> Secured 10 Million PKR funding from the Ministry of Planning and
+                                Development to transform Final Year Project idea into a startup.</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">July
+                                    2023</span> Achieved 3rd place in an International Hackathon.</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">Feb
+                                    2023</span> Bachelor's Final Year Project was selected by the Pakistan Engineering
+                                Council(PEC) for financial assistance.</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">May
+                                    2015</span> Awarded 1st position in a Arabic Calligraphy Competition at the District
+                                Narowal level, Pakistan.</li>
+                            <li><span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">Jan
+                                    2013</span> Achieved 3rd place in the State Talent Test for 8th grade in Tehsil
+                                Zafarwal, organized by the All Pakistan Private School Association.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CV Section -->
+            <section id="cv" class="content-section inactive-section p-6 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-3xl font-bold text-primary mb-6">Curriculum Vitae</h1>
+                    <div class="bg-white rounded-xl p-6 mb-8">
+                        <!-- <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-2xl font-bold">Zain Ramzan</h2>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fas fa-download mr-2"></i> Download CV
+                            </button>
+                        </div> -->
+                        <!-- Education -->
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary border-b pb-2 mb-3"><i
+                                        class="fa-solid fa-graduation-cap">‌</i> Education</h3>
+                                <div class="pl-2 space-y-4">
+                                    <div>
+                                        <h4 class="font-bold inline-block">Master's in Computer Science - Industry 4.0
+                                        </h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>University of Pau and Adour Countries (UPPA), France | 2024-2025</p>
+                                        <ul class="list-disc pl-5 hidden" id="details">
+                                            <li><b>Courses:</b> Business Intelligence, Digital Twin, Cyber-Physical
+                                                Systems, Research Initiation</li>
+                                            <li><b>Study-End Internship:</b> AI Recommendation Approach for Green
+                                                Software</li>
+                                        </ul>
+                                        <!-- <p class="text-sm italic">Advisor: Prof. Robert Johnson</p> -->
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold inline-block">B.sc in Electrical Engineering</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>Mirpur University of Science and Technology
+                                            (MUST),
+                                            Pakistan | 2018-2022</p>
+                                        <ul class="list-disc pl-5 hidden" id="details">
+                                            <li><b>Thesis:</b> Towards Reducing Handoff Time in Next Generation
+                                                Wireless
+                                                Networks</li>
+                                        </ul>
+                                        <!-- <p class="text-sm italic">GPA: 3.92/4.0</p> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experience -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary border-b pb-2 mb-3"><i
+                                        class="fa-solid fa-briefcase">‌</i> Experience</h3>
+                                <div class="pl-2 space-y-4">
+                                    <div>
+                                        <h4 class="font-bold inline-block">Master 2 Research Internship</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>LIUPPA, France | March 2025-Present</p>
+                                        <ul class="list-disc pl-5 hidden" id="details">
+                                            <li><b>Supervisor:</b> Dr. Adel Noureddine</li>
+                                            <li>Developing AI recommendations for energy-efficient software under
+                                                France’s green tech initiatives.</li>
+                                            <li>Designing autonomic systems to reduce digital carbon footprint using
+                                                NLP, TensorFlow and Data Management.</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold inline-block">Data Engineer Intern</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>Pepsi Naubahar, Pakistan | July 2024 - Aug 2024</p>
+                                        <ul class="list-disc pl-5 mt-2 hidden" id="details">
+                                            <li><b>Supervisors:</b> Mr. Sami Ullah Dar (Deputy. Manager Production) and
+                                                Mr. Usman Shehzad</li>
+                                            <li>Supported the HSE team in launching a full Health, Safety, and
+                                                Environment plan at a new manufacturing site.</li>
+                                            <li>Played a key role in driving a safety-first culture through employee
+                                                training and workshops.</li>
+                                            <li>Designed and implemented a KPI tracking system to monitor safety
+                                                performance and improve team accountability.</li>
+                                            <li><b>Key Skills:</b>
+                                                <ul>
+                                                    <li> - Health, Safety, and Environment (HSE)</li>
+                                                    <li> - KPI Development & Monitoring</li>
+                                                    <li> - Training & Workshop Facilitation</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold inline-block">Teaching Assistant</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>UET,Narowal Pakistan | Dec 2023 - May 2024</p>
+                                        <ul class="list-disc pl-5 mt-2 hidden" id="details">
+                                            <li><b>Supervisor:</b> Dr. Waqas Tariq Toor (Chairman Electrical Engineering
+                                                Dept.)</li>
+                                            <li>Mentored students on lab projects including IoT, Digital and practical
+                                                Circut Design.</li>
+                                            <li>Assisted in collecting Teaching Courses material.</li>
+                                            <li><b>Key Areas:</b>
+                                                <ul>
+                                                    <li>- Student Mentorship & Lab Support</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold inline-block">Machine Learning Engineer</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>Fiverr | Jun 2021 - Jan 2023</p>
+                                        <ul class="list-disc pl-5 mt-2 hidden" id="details">
+                                            <li>Helped businesses and startups worldwide grow by making data-driven
+                                                decisions.</li>
+                                            <li><b>Key Skills:</b>
+                                                <ul>
+                                                    <li>- Machine Learning</li>
+                                                    <li>- Business Intelligence</li>
+                                                    <li>- AI Product Development</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold inline-block">Training Internship</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>SCO | Aug 2022 - Sep 2022</p>
+                                        <ul class="list-disc pl-5 mt-2 hidden" id="details">
+                                            <li>Worked on improving wireless communication protocols to boost data
+                                                transmission efficiency.</li>
+                                            <li>Collaborated with teams to integrate IoT devices into existing
+                                                infrastructure, ensuring reliable connectivity.</li>
+                                            <li>Performed data analysis and testing to assess wireless system
+                                                performance in industrial environments, supporting research efforts.
+                                            </li>
+                                            <li><b>Key Areas:</b>
+                                                <ul>
+                                                    <li>- Wireless Communication Optimization</li>
+                                                    <li>- IoT Integration</li>
+                                                    <li>- Data Analysis & System Testing</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold inline-block">Course Instructor</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>The Techrotics Lab | Sep 2021 - Dec 2021</p>
+                                        <ul class="list-disc pl-5 mt-2 hidden" id="details">
+                                            <li>Taught React.js and React Native for building scalable web and mobile
+                                                applications.</li>
+                                            <li>Led hands-on projects focused on real-time data processing,
+                                                visualization, and interactive UI design.</li>
+                                            <li>Assessed student work and provided feedback to deepen their grasp of
+                                                modern web development and software engineering practices.</li>
+                                            <li><b>Key Areas:</b>
+                                                <ul>
+                                                    <li>- React.js & React Native</li>
+                                                    <li>- Real-Time Web App Development</li>
+                                                    <li>- Student Mentorship & Code Review</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skills -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary border-b pb-2 mb-3"><i
+                                        class="fa-solid fa-wand-magic-sparkles"></i> Skills</h3>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pl-2">
+                                    <div>
+                                        <h4 class="font-semibold">Languages</h4>
+                                        <ul class="list-disc pl-5">
+                                            <li>Python</li>
+                                            <li>R</li>
+                                            <li>C++</li>
+                                            <li>SQL</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">ML & Data Tools:</h4>
+                                        <ul class="list-disc pl-5">
+                                            <li>NumPy</li>
+                                            <li>Pandas</li>
+                                            <li>Scikit-learn</li>
+                                            <li>TensorFlow</li>
+                                            <li>PyTorch</li>
+                                            <li>OpenCV</li>
+                                            <li>Open3D</li>
+                                            <li>YOLO</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-semibold">Data Handling:</h4>
+                                        <ul class="list-disc pl-5">
+                                            <li>MySQL</li>
+                                            <li>SQL Server</li>
+                                            <li>MongoDB</li>
+                                            <li>SQLite</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-semibold">Dev Tools:</h4>
+                                        <ul class="list-disc pl-5">
+                                            <li>Docker</li>
+                                            <li>Git</li>
+                                            <li>Postman</li>
+                                            <li>Jupyter Notebook</li>
+                                            <li>Visual Studio Code</li>
+                                            <li>PyCharm</li>
+                                        </ul>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-semibold">Web & APIs:</h4>
+                                        <ul class="list-disc pl-5">
+                                            <li>Flask</li>
+                                            <li>Node.js</li>
+                                            <li>Express.js</li>
+                                            <li>React</li>
+                                            <li>React Native</li>
+                                            <li>Redux</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Volunteer Experience -->
+                            <div>
+                                <h3 class="text-xl font-semibold text-primary border-b pb-2 mb-3"><i
+                                        class="fa-solid fa-people-group"></i> Volunteer Experience</h3>
+                                <div class="pl-2 space-y-4">
+                                    <div>
+                                        <h4 class="font-bold inline-block">Moderator and Lead Instructor</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>iCodeGuru | Aug 2023 - Present</p>
+                                        <ul class="list-disc pl-5 hidden" id="details">
+                                            <li>Delivered comprehensive lessons in Python, Data Structures, and
+                                                Algorithms, Machine Learning and Deep learning, emphasizing
+                                                problem-solving through Leetcode challenges.</li>
+                                            <li>Mentored students in preparation for international hackathons and coding
+                                                competitions, fostering innovation and teamwork.</li>
+                                        </ul>
+                                        <!-- <p class="text-sm italic">Advisor: Prof. Robert Johnson</p> -->
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold inline-block">Frontend Developer and Campus Ambassador
+                                        </h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>AWS Community Pakistan | Apr 2021 - Sep 2023</p>
+                                        <ul class="list-disc pl-5 hidden" id="details">
+                                            <li>Served as a Web Developer, MUST Campus Ambassador, and Documentation
+                                                Team at AWS Community Pakistan on AWS Community Day, contributing to
+                                                the success of this exciting event.</li>
+                                        </ul>
+                                        <!-- <p class="text-sm italic">Advisor: Prof. Robert Johnson</p> -->
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-bold inline-block">Graphic Designer Head</h4>
+                                        <i class="fa-solid fa-angle-right ml-2 cursor-pointer"
+                                            onclick="toggleDetails(this)"></i>
+                                        <p>Positive Pakistan, MUST Chapter | Feb 2019 – Sep 2022</p>
+                                        <ul class="list-disc pl-5 hidden" id="details">
+                                            <li>Led as the Graphic Designer Head at Positive Pakistan (MUST Chapter) for
+                                                an impactful 3-year tenure, contributing to the organization’s creative
+                                                initiatives and visual identity.</li>
+                                        </ul>
+                                        <!-- <p class="text-sm italic">Advisor: Prof. Robert Johnson</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section inactive-section p-6 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-3xl font-bold text-primary mb-6">Projects</h1>
+
+                    <div class="space-y-8">
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <h2 class="text-xl font-bold text-primary">BEHAVE</h2>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">March 2025-Present</span>
+                            </div>
+                            <p class="mb-4">As a Research Intern, we are developing AI recommendations for energy-efficient software under France’s green tech initiatives. We are designing autonomic systems to reduce digital carbon footprint using NLP, TensorFlow and Data Management.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">NLP</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-link text-secondary mr-2"></i>
+                                <a href="https://www.noureddine.org/research/behave" target="_blank" class="text-secondary hover:underline">Project Website</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <h2 class="text-xl font-bold text-primary">Real-Time Helmet Violation Detection in Islamabad</h2>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">Nov 2023</span>
+                            </div>
+                            <!-- <p class="mb-4"></p> -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Computer Vision</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">PyTorch</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-github text-secondary mr-2"></i>
+                                <a href="https://github.com/zain-ramzan/Real-Time-Helmet-Violation-Detection" target="_blank" class="text-secondary hover:underline">Code & Report</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <h2 class="text-xl font-bold text-primary">Easy Scrape - Seamless Conversion From HTML To CSV</h2>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">Aug 2023</span>
+                            </div>
+                            <p class="mb-4">This app uses AI to scrape websites by generating JavaScript code that extracts specified data elements and converts them into CSV format. Users receive both the generated code and a downloadable CSV file containing the extracted data.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Web scraping</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML, JS</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AI/prompt-based code generation</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-globe text-secondary mr-2"></i>
+                                <a href="https://lablab.ai/event/stablecode-24-hours-hackathon/visioneers/easy-scrape-seamless-conversion-from-html-to-csv" target="_blank" class="text-secondary hover:underline">Hackathon Project Page</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <h2 class="text-xl font-bold text-primary">EmojiIntrospector - Embeddings 2 Emoji streams</h2>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">Aug 2023</span>
+                            </div>
+                            <p class="mb-4">This project uses the EnCodec model to convert audio files into text representations, which are then translated into emoji sequences that visually represent the audio's harmonic structure, enabling analysis and visualization.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-globe text-secondary mr-2"></i>
+                                <a href="https://lablab.ai/event/audiocraft-24-hours-hackathon/introspectiwavevisioneers/emojiintrospector-embeddings-2-emoji-streams" target="_blank" class="text-secondary hover:underline">Hackathon Project Page</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <h2 class="text-xl font-bold text-primary">Introspective Workflow Generation Clarifai LLama2</h2>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">Aug 2023</span>
+                            </div>
+                            <p class="mb-4">The project leverages Clarifai to create dynamic AI workflows using emoji sequences, enhancing contextual understanding through metadata and prompt engineering. An orchestration framework manages the process, ensuring scalability and performance with tools like Kubernetes and CI/CD.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-globe text-secondary mr-2"></i>
+                                <a href="https://lablab.ai/event/llama-2-hackathon-with-clarifai/introspector/introspective-workflow-generation-clarifai-llama2" target="_blank" class="text-secondary hover:underline">Hackathon Project Page</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <h2 class="text-xl font-bold text-primary">Towards Reducing Handoff Times in Next Generation Wi-Fi Networks</h2>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">Nov 2021 - Sep 2022</span>
+                            </div>
+                            <p class="mb-4">Bachelor's Thesis: We developed an SDN model implemented in OMNet++ that reduces handoff times in next-generation wireless networks by 42%, contributing significantly to the field of wireless communications.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Wireless Networking</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">NS3</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-github text-secondary mr-2"></i>
+                                <a href="https://github.com/ZainRamzanGorsi/Towards-Reducing-Handoff-Time-in-Next-Generation-Wireless-Networks" target="_blank" class="text-secondary hover:underline">Project Documentation</a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-6">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                <h2 class="text-xl font-bold text-primary">Expense Tracker App</h2>
+                                <span
+                                    class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold mt-2 md:mt-0">June 2021</span>
+                            </div>
+                            <p class="mb-4">A user-friendly tool for tracking expenses and viewing spending history, built with React.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <div class="flex items-center">
+                                    <i class="fab fa-github text-secondary mr-2"></i>
+                                    <a href="https://github.com/ZainRamzanGorsi/Project-01" target="_blank" class="text-secondary hover:underline">Code</a>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-globe text-secondary mr-2"></i>
+                                    <a href="http://gorsi-expense-tracker-app.surge.sh/" target="_blank" class="text-secondary hover:underline">Website</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section id="publications" class="content-section inactive-section p-6 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-3xl font-bold text-primary mb-6">Publications</h1>
+
+                    <div class="space-y-6">
+                        <div class="publication-card bg-white rounded-xl p-6 transition-all duration-300">
+                            <div class="flex items-start">
+                                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4 flex-shrink-0"><img src="./images/logoEC_short.png" class="mt-3" alt="">
+                                </div>
+                                <div>
+                                    <h2 class="text-xl font-bold">The Role of Digital Twin to Advance Urban Smart Mobility Solutions 
+                                    </h2>
+                                    <p class="text-secondary font-semibold">Zain Ramzan</p>
+                                    <p class="text-sm mb-2">EasyChair UPPA, 2025</p>
+                                    <p>This study demonstrates a novel CRISPR-based approach to extend telomeres in
+                                        human cells, providing new insights into cellular aging mechanisms and potential
+                                        therapeutic applications.</p>
+                                    <div class="mt-3 flex space-x-3">
+                                        <a href="./files/RAMZANZain_The Role of Digital Twin to Advance Urban Smart Mobility Solutions.pdf" target="_blank" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-file-pdf mr-1"></i> PDF
+                                        </a>
+                                        <a href="./files/ZainRAMZAN_TheRoleOfDigitalTwinToAdvanceUrbanSmartMobilitySolutions.pdf" target="_blank" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-file-alt mr-1"></i> Poster
+                                        </a>
+                                        <!-- <a href="#" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-quote-right mr-1"></i> Cite
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="publication-card bg-white rounded-xl p-6 transition-all duration-300">
+                            <div class="flex items-start">
+                                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4 flex-shrink-0">
+                                </div>
+                                <div>
+                                    <h2 class="text-xl font-bold">CRISPR-Mediated Enhancement of Stem Cell Regeneration
+                                    </h2>
+                                    <p class="text-secondary font-semibold">Smith, J., Davis, M., Johnson, R.</p>
+                                    <p class="text-sm mb-2">Cell Stem Cell, 2022 | DOI: 10.1016/j.stem.2022.05.009</p>
+                                    <p>We report a new method to enhance the regenerative capacity of stem cells through
+                                        targeted genetic modifications, with implications for tissue repair and
+                                        regenerative medicine.</p>
+                                    <div class="mt-3 flex space-x-3">
+                                        <a href="#" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-file-pdf mr-1"></i> PDF
+                                        </a>
+                                        <a href="#" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-link mr-1"></i> Journal
+                                        </a>
+                                        <a href="#" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-quote-right mr-1"></i> Cite
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="publication-card bg-white rounded-xl p-6 transition-all duration-300">
+                            <div class="flex items-start">
+                                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4 flex-shrink-0">
+                                </div>
+                                <div>
+                                    <h2 class="text-xl font-bold">High-Throughput Screening for Personalized Cancer
+                                        Therapeutics</h2>
+                                    <p class="text-secondary font-semibold">Brown, T., Smith, J., Wilson, K.</p>
+                                    <p class="text-sm mb-2">Science Advances, 2021 | DOI: 10.1126/sciadv.abd2345</p>
+                                    <p>Development of an innovative screening platform that enables rapid identification
+                                        of effective cancer therapies based on individual tumor genetics and drug
+                                        sensitivity profiles.</p>
+                                    <div class="mt-3 flex space-x-3">
+                                        <a href="#" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-file-pdf mr-1"></i> PDF
+                                        </a>
+                                        <a href="#" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-link mr-1"></i> Journal
+                                        </a>
+                                        <a href="#" class="text-primary hover:underline flex items-center">
+                                            <i class="fas fa-quote-right mr-1"></i> Cite
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Articles Section -->
+            <section id="articles" class="content-section inactive-section p-6 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-3xl font-bold text-primary mb-6">Articles & Blog</h1>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <!-- <div class="h-48 bg-gradient-to-r from-blue-400 to-indigo-600 "></div> -->
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">May 15, 2025</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">AI in Green Software</h2>
+                                <p class="mb-4">Did you know that global computing currently consumes more electricity
+                                    than entire countries? And we're only increasing our digital appetite.</p>
+                                <a href="https://www.linkedin.com/posts/zainramzan_greensoftware-aiforgood-sustainabletech-activity-7328736393617104897-HvOB/"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <!-- <div class="h-48 bg-gradient-to-r from-green-400 to-teal-600"></div> -->
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">January 10, 2025</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">Industry 4.0</h2>
+                                <p class="mb-4">Industry 4.0 isn’t just about automation; it’s about smart
+                                    decision-making.</p>
+                                <a href="https://www.linkedin.com/posts/zainramzan_industry4-ai-iot-activity-7267711300032471040-dtP8/"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <!-- <div class="h-48 bg-gradient-to-r from-purple-400 to-pink-600"></div> -->
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">December 20, 2024</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">Cyber-Physical Systems (CPS)</h2>
+                                <p class="mb-4">CPS blends the physical world with computational power, creating systems
+                                    that interact seamlessly through sensors, software, and networking.</p>
+                                <a href="https://www.linkedin.com/posts/zainramzan_cyberphysicalsystems-industryfourthrevolution-activity-7255843563710599168-Uua7/"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">December 15, 2024</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">Agriculture in 2030
+                                </h2>
+                                <p class="mb-4">Agriculture in 2030 is set to be transformed by data science. With
+                                    growing populations and climate challenges, data-driven approaches are crucial for
+                                    efficient and sustainable farming.</p>
+                                <a href="https://www.linkedin.com/posts/zainramzan_agriculture-datascience-precisionfarming-activity-7255494267224162304-H36P/"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">December 10, 2024</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">6 Phases of Data Analysis
+                                </h2>
+                                <p class="mb-4">As data drives the future of mobility, data analysis becomes critical
+                                    for automotive companies aiming to optimize performance, reduce costs, and enhance
+                                    customer experience.</p>
+                                <a href="https://www.linkedin.com/posts/zainramzan_dataanalysis-automotiveindustry-datadriven-activity-7258042769829453824-auXQ/"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">December 02, 2024</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">Data Analysis for Business Growth
+                                </h2>
+                                <p class="mb-4">In today’s fast-paced business landscape, making data-driven decisions
+                                    is no longer a luxury—it’s a necessity. Companies that harness the power of data
+                                    analysis are not just surviving; they’re thriving.</p>
+                                <a href="https://www.linkedin.com/posts/zainramzan_datascience-cosmeticsindustry-dataanalytics-activity-7256619717317038081-eLGN/"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">November 20, 2024</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">Digital Transformation
+                                </h2>
+                                <p class="mb-4">Digitalization of the manufacturing sector is not just a trend; it’s a
+                                    necessity. As we move deeper into the era of Industry 4.0, manufacturers must
+                                    embrace digital technologies to enhance efficiency, improve product quality, and
+                                    drive innovation.</p>
+                                <a href="https://www.linkedin.com/posts/zainramzan_predictivemaintenance-smartmanufacturing-activity-7256273142141046784-yFww/"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">September 27, 2023</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">Learning Python through Smart Projects
+                                </h2>
+                                <p class="mb-4">A unique way to learn Python by focusing on simple yet smart projects
+                                    that will not only teach you the language but also sharpen your problem-solving
+                                    skills.</p>
+                                <a href="https://www.linkedin.com/pulse/learning-python-through-smart-projects-flowchart-quick-zain-ramzan"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <div class="p-6">
+                                <span class="text-sm text-secondary font-semibold">September 22, 2023</span>
+                                <h2 class="text-xl font-bold mt-2 mb-3">Python Can Supercharge Your Career
+                                </h2>
+                                <p class="mb-4">One skill that consistently stands out as a game-changer is Python
+                                    programming. Whether you are in finance, healthcare, marketing, or tech, Python is
+                                    the ultimate tool that can supercharge your career.</p>
+                                <a href="https://www.linkedin.com/pulse/learning-python-through-smart-projects-flowchart-quick-zain-ramzan"
+                                    target="_blank"
+                                    class="text-primary font-semibold hover:underline flex items-center">
+                                    Read More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section id="gallery" class="content-section inactive-section p-6 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-3xl font-bold text-primary mb-6">Research Gallery</h1>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="gallery-item bg-white rounded-xl overflow-hidden">
+                            <div
+                                class="h-48 bg-gradient-to-br from-blue-200 to-indigo-300 flex items-center justify-center">
+                                <i class="fas fa-microscope text-6xl text-blue-700"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold">Lab Work</h3>
+                                <p class="text-sm text-gray-600">Advanced microscopy techniques</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item bg-white rounded-xl overflow-hidden">
+                            <div
+                                class="h-48 bg-gradient-to-br from-green-200 to-teal-300 flex items-center justify-center">
+                                <i class="fas fa-dna text-6xl text-green-700"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold">Genetic Analysis</h3>
+                                <p class="text-sm text-gray-600">DNA sequencing workflow</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item bg-white rounded-xl overflow-hidden">
+                            <div
+                                class="h-48 bg-gradient-to-br from-purple-200 to-pink-300 flex items-center justify-center">
+                                <i class="fas fa-vial text-6xl text-purple-700"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold">Cell Culture</h3>
+                                <p class="text-sm text-gray-600">Stem cell differentiation</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item bg-white rounded-xl overflow-hidden">
+                            <div
+                                class="h-48 bg-gradient-to-br from-yellow-200 to-orange-300 flex items-center justify-center">
+                                <i class="fas fa-laptop-code text-6xl text-yellow-700"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold">Data Analysis</h3>
+                                <p class="text-sm text-gray-600">Bioinformatics pipeline</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item bg-white rounded-xl overflow-hidden">
+                            <div
+                                class="h-48 bg-gradient-to-br from-red-200 to-pink-300 flex items-center justify-center">
+                                <i class="fas fa-chart-line text-6xl text-red-700"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold">Research Findings</h3>
+                                <p class="text-sm text-gray-600">Experimental results visualization</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item bg-white rounded-xl overflow-hidden">
+                            <div
+                                class="h-48 bg-gradient-to-br from-indigo-200 to-purple-300 flex items-center justify-center">
+                                <i class="fas fa-users text-6xl text-indigo-700"></i>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-semibold">Collaboration</h3>
+                                <p class="text-sm text-gray-600">Team research discussions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 bg-white rounded-xl p-6">
+                        <h2 class="text-xl font-bold text-primary mb-4">Conference Presentations</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4 flex-shrink-0">
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">International Conference on Aging Research</h3>
+                                    <p class="text-secondary">Berlin, Germany | October 2023</p>
+                                    <p class="mt-1">Keynote: "Telomere Dynamics in Cellular Aging"</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4 flex-shrink-0">
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">World CRISPR Conference</h3>
+                                    <p class="text-secondary">San Francisco, USA | June 2023</p>
+                                    <p class="mt-1">Presentation: "CRISPR Applications in Regenerative Medicine"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Section switching function
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active-section');
+                section.classList.add('inactive-section');
+            });
+
+            // Show selected section
+            document.getElementById(sectionId).classList.remove('inactive-section');
+            document.getElementById(sectionId).classList.add('active-section');
+
+            // Update active buttons
+            document.querySelectorAll('.nav-btn, .mobile-menu-btn').forEach(btn => {
+                btn.classList.remove('bg-light');
+            });
+
+            // Add active class to current button
+            document.querySelectorAll('.nav-btn, .mobile-menu-btn').forEach(btn => {
+                if (btn.getAttribute('onclick').includes(sectionId)) {
+                    btn.classList.add('bg-light');
+                }
+            });
+
+            // Close mobile menu after selection
+            document.getElementById('mobileMenu').classList.remove('active');
+        }
+
+        // Initialize with About section active
+        document.addEventListener('DOMContentLoaded', function () {
+            showSection('about');
+
+            // Mobile menu toggle
+            document.getElementById('mobileMenuBtn').addEventListener('click', function () {
+                const mobileMenu = document.getElementById('mobileMenu');
+                mobileMenu.classList.toggle('active');
+            });
+        });
+
+        // Toggle Button
+        function toggleDetails(icon) {
+            const parent = icon.parentNode;
+            const details = parent.querySelector('#details');
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                icon.classList.remove('fa-angle-right');
+                icon.classList.add('fa-angle-down');
+            } else {
+                details.classList.add('hidden');
+                icon.classList.remove('fa-angle-down');
+                icon.classList.add('fa-angle-right');
+            }
+        }
+    </script>
+</body>
+
+</html>
